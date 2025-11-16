@@ -1,0 +1,407 @@
+# VIP (=: flat T)
+# 08jul25 Software Lab. Alexander Burger
+
+      StenoBoard
+      ==========
+
+StenoBoard is a virtual keyboard for Android, which allows to input any
+character (letter, digit, punctuation or control) and function or
+navigation key with a single stroke or tap.
+
+A "stroke" is a movement on one of nine fields on the screen, in one of
+eight directions over a certain minimal distance, ending in one of four
+gestures. This gives a total of 297 possible keys (288 strokes plus 9
+taps, see below).
+
+It is not necessary to draw a stroke exactly inside a field. It can be
+smaller or bigger, relevant is only that its center is inside the
+intended field.
+
+The nine fields are the center field plus the surrounding eight modifier
+fields:
+
+          |       |
+      P   |   D   |   S
+          |       |
+   -------+-------+-------
+          |       |
+      CP  |       |  SA
+          |       |
+   -------+-------+-------
+          |       |
+      C   |   F   |   A
+          |       |
+
+   S: Shift
+   P: Punctuation
+   D: Digit
+   A: AltGr
+   C: Control
+   F: Function
+
+   CP: Control + Punctuation
+   SA: Shift + AltGr
+
+
+The eight directions are
+
+   E:  East
+   SE: South East
+   S:  South
+   SW: South West
+   W:  West
+   NW: North West
+   N:  North
+   NE: North East
+
+
+and the terminating gestures are
+
+   * Lift the finger up
+   * Deviate a bit to the right
+   * Deviate a bit to the left
+   * Move a bit back
+
+
+If the finger is not moved, but lifted up immediately, it is a "tap" and
+generates some often-used keys:
+
+          |       |
+      3   |  ESC  |  321
+          |       |
+   -------+-------+-------
+          |       |
+      BS  |   1   |  TAB
+          |       |
+   -------+-------+-------
+          |       |
+      2   |  RET  |  21
+          |       |
+
+
+Tabulator, Return, Backspace or Escape, or some repetitions of previous
+keys. Pressing a little longer will start an auto-repeat.
+
+Otherwise, after moving that minimal distance, it is considered as the
+beginning of a stroke. To indicate that to the user, a short vibration
+gives haptic feedback.
+
+If now the finger is lifted up, the key is immediately generated. If the
+movement deviates from the original direction more than a certain
+threshold, or moves back more than a certain distance, a second feedback
+and another key is generated.
+
+The haptic feedback is quite helpful for a precise input of the strokes.
+Thus it is strongly recommended to switch on "Vibration and haptics" in
+the system settings.
+
+You can abort a stroke by touching the screen anywhere with a second
+finger.
+
+Touching the screen outside the input fields area temporarily hides
+StenoBoard. You can now perform normal operations like selecting,
+copying, scrolling, or clicking on buttons in the underlying
+application.
+
+Swiping the screen horizontally or vertically, by starting in the "pad"
+area, which will generate the left, right, up and down Arrow keys.
+The pad area is invisible, but has the the same size as - and is
+directly above, below or besides - the input fields:
+
+   +---------------------+
+   |                     |
+   |                     |
+   |                     |
+   |        +- - - - -+  |
+   |        :         :  |
+   |        :   Pad   :  |      +---------------------------------+
+   |        :         :  |      |                                 |
+   |        :         :  |      |                                 |
+   |        +- - - - -+  |      |                                 |
+   |                     |      |       +- - - - -+               |
+   |           |   |     |      |       :         :     |   |     |
+   |        ---+---+---  |      |       :   Pad   :  ---+---+---  |
+   |           |   |     |      |       :         :     |   |     |
+   |        ---+---+---  |      |       :         :  ---+---+---  |
+   |           |   |     |      |       +- - - - -+     |   |     |
+   |                     |      |                                 |
+   +---------------------+      +---------------------------------+
+
+Swiping vertically outside the fields and pad area adjusts the display
+brightness, and swiping horizontally adjusts the audio volume. To enable
+these two, the "Modify settings" permission must be granted to the
+StenoBoard App.
+
+The hardware volume keys (and the gyroscope sensor during long presses)
+generate special sequences, starting with a "Δ" character. They can be
+used for mouse emulation.
+
+"Normal" keys are written in the center field. They are the lower case
+letters a-z, space, plus the often used characters ",", ".", "?", "("
+and ")".
+
+
+      Shift
+      -----
+
+The Shift field generates upper case versions of the normal characters,
+with the exception that comma, dot and question mark are the same, and
+"(" becomes "{" and ")" becomes "}".
+
+
+      Punctuation
+      -----------
+
+The characters written in the Punctuation field are easy to memorize:
+
+   &  [A]mpersand
+   \  [B]ackslash
+   ^  [C]aret
+   "  [D]ouble quote
+   =  [E]qual sign
+   `  [G]rave accent
+   #  [H]ash
+   @  Atmar[k], [K]lammeraffe
+   <  [L]ess
+   >  [M]ore
+   |  [O]r
+   %  [P]ercent
+   '  [Q]uote
+   $  Dollar [S]
+   ~  [T]ilde
+   _  [U]nderscore
+   ;  [,]
+   :  [.]
+   !  [?]
+   [  [(]
+   ]  [)]
+
+
+      AltGr
+      -----
+
+Some language specific characters and a few smileys are generated in the
+AltGr field. Typical ones are:
+
+   ä  A-A
+   Ä  SA-A
+   ö  A-O
+   Ö  SA-O
+   ü  A-U
+   Ü  SA-U
+   ß  A-S
+   €  A-E Euro
+   §  A-P Paragraph
+   ²  A-2
+   ³  A-3
+   😎 A-C [C]ool
+   ☺  A-L [L]augh
+   ♥  A-R Hea[r]t
+   👍 A-T [T]humb
+
+
+      Function Keys
+      -------------
+
+Writing a digit 1-9 in the Function field generates function keys F1-F9,
+a "V" generates F11 and a "W" generates F12.
+
+A Comma generates INS, "D" generates DEL, and "Q" generates BREAK.
+
+
+      Navigation Keys
+      ---------------
+
+Navigation keys are also generated in the Function field:
+
+* Plain strokes right (East), down (South), left (West) or up (North)
+  generate the Arrow keys
+
+* Plain strokes South East or North East generate PAGE DOWN or PAGE UP,
+  respectively
+
+* Plain strokes South West or North West generate END or HOME,
+  respectively
+
+
+      Control
+      -------
+
+In addition to the normal control keys "^A" through "^Z", the keys for
+space, ",", ".", "?", "(" and ")" are also assigned.
+
+Ctrl-space toggles candidate input on/off (e.g. Japanese or
+language-specific letters, but also some smileys via "$"). Typing text
+will then display matching candidates in the top row of the screen. This
+list can be scrolled forward with TAB and backward with BS. Either tap
+on one of them to use it, tap RET to use the first one, tap ESC to
+directly use the text entered so far, or type Ctrl-space again to close
+the candidate input.
+
+Typing PASTE (see below) in candidate input adds the current paste
+buffer contents to the candidates database, either directly, or with the
+characters typed so far as the key.
+
+Typing DEL in candidate input deletes the combination of the key typed
+so far and the first match from the candidates database.
+
+The five remaining five keys generate sequences useful only in the TMUX
+terminal multiplexer:
+
+   ,  ^B DOWN      Change to the pane below
+   .  ^B [ 0 UP    Enter copy mode and scroll one line up
+   ?  ^B [ 0 PGUP  Enter copy mode and scroll one page up
+   (  ^B p         Change to the previous window
+   )  ^B n         Change to the next window
+
+
+      Special Keys
+      ------------
+
+The following keys control StenoBoard itself and are all generated in
+the Digit field:
+
+* Plain strokes South East, South West, North West or North East move
+  the whole layout on the screen to the bottom right (BOT-R), bottom
+  left (BOT-L), top left (TOP-L) or top right (TOP-R), respectively.
+
+* A stroke down (South) hides StenoBoard (QUIT).
+
+* A stroke left (West) starts numeric input (NUM) as a decimal number,
+  allowing to generate any Unicode character.
+
+* A stroke up (North) pastes the system clipboard (or the last element
+  from the PASTE queue if not empty), by sending it as a sequence of
+  keys (PASTE).
+
+* "P" (PUSH) pushes the system clipboard to the PASTE queue.
+
+* "M" (MIC) allows voice input via Google Speech Recognition, until the
+  finger is lifted up. Requires the "Microphone" permission in the App
+  Settings.
+
+* "W" (WIPE) erases the text generated with the last input. Useful to
+  undo an unintentional paste, or a failed voice recognition.
+
+* "V" (VERS) displays the current version.
+
+* Finally, "D" (DOC) pops up a help screen (see below).
+
+
+      Repeat Taps
+      -----------
+
+A tap in the center field repeats the last key. A tap in the bottom left
+field (2) repeats the second last, and the top left field (3) the third
+last one.
+
+The bottom right field (21) repeats the two last keys, and the top right
+field (321) the three last ones.
+
+A long press in those fields starts an auto-repeat.
+
+
+      Documentation
+      -------------
+
+There is a Cheat Sheet "cheat.pdf" in the "StenoBoard.tgz" release file
+(see the "Download" section below), outlining the strokes for the
+individual keys.
+
+If you write a stroke North-Back (a "D" for "documentation") in the
+Digit field, a help screen is displayed. It shows the stroke in the
+first column (in the form of a direction like "N" or "NW", possibly
+followed by a hyphen and a terminating gesture "R" (right), "L" (left)
+or "B" (back)), and the generated keys or actions in the following
+columns.
+
+
+      Download
+      --------
+
+StenoBoard can be installed from PlayStore, or built locally.
+
+Sources
+
+   https://software-lab.de/StenoBoard.tgz
+
+APK
+
+   https://software-lab.de/stenoBoard.apk
+
+Docs
+
+   https://software-lab.de/StenoBoard/README
+   https://software-lab.de/StenoBoard/cheat.svg
+   https://software-lab.de/StenoBoard/cheat.pdf
+
+
+      Building StenoBoard
+      -------------------
+
+First make sure to have Java-11 installed
+
+   $ update-alternatives --config java
+
+Then create a directory "android_sdk" in some convenient place
+
+   $ mkdir android_sdk
+   $ cd android_sdk
+
+Download Android Command Line Tools for Linux. For this, go to
+
+   https://developer.android.com/studio
+
+and download
+
+   commandlinetools-linux-<xxx>_latest.zip
+
+for Linux from the "Command line tools onl" section, unpack it,
+
+   $ unzip commandlinetools-linux-<xxx>_latest.zip
+
+and use the SDK Manager to install the following packages:
+
+   $ cmdline-tools/bin/sdkmanager --sdk_root=. "platform-tools"
+   $ cmdline-tools/bin/sdkmanager --sdk_root=. "platforms;android-34"
+   $ cmdline-tools/bin/sdkmanager --sdk_root=. "tools"
+
+To build an app bundle, we need "bundletool":
+
+   $ mkdir bundle-tools
+   $ cd bundle-tools/
+
+Get AAPT2 from Google's Maven repository (https://maven.google.com):
+
+Currently, the latest is
+
+   https://dl.google.com/dl/android/maven2/com/android/tools/build/aapt2/8.8.0-alpha04-12006047/aapt2-8.8.0-alpha04-12006047-linux.jar
+
+Download and unpackage the downloaded JAR file.
+
+You will need to create your own keystore with two keys for signing the
+APK and Bundles later
+
+   $ keytool -genkeypair  -alias appkey  -keystore key.jks  -keyalg RSA  -keysize 2048  -validity 10000
+   $ keytool -genkeypair  -alias bndkey  -keystore key.jks  -keyalg RSA  -keysize 2048  -validity 10000
+
+Fetch StenoBoard.tgz from software-lab.de and extract it
+
+   $ tar xfz StenoBoard.tgz
+
+Then change to this directory, and build the StenoBoard APK:
+
+   $ cd StenoBoard/
+   $ ./mk.stenoBoard
+
+This results in an installable APK file "stenoBoard.apk".
+
+
+      Contact
+      -------
+
+   Alexander Burger
+   Software Lab. / 7fach GmbH
+   Bahnhofstr. 24a, D-86462 Langweid
+   abu@software-lab.de
+   @abu:7fach.de

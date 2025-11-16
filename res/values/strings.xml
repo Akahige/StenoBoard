@@ -1,0 +1,7 @@
+<resources>
+   <!-- Title -->
+   <string name="app_name">Steno</string>
+
+   <!-- Labels for subtype -->
+   <string name="label_subtype_de">Shorthand Keyboard</string>
+</resources>

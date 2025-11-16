@@ -1,0 +1,1354 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="598pt" height="842pt" viewBox="0 0 598 842" class="svg">
+<g transform="translate(21,30)">
+<text x="100" y="24" text-anchor="middle" font-size="24" font-family="serif" font-style="normal" font-weight="normal">StenoBoard</text>
+<text x="100" y="42" text-anchor="middle" font-size="18" font-family="serif" font-style="normal" font-weight="normal">Cheat Sheet</text>
+<a href="https://software-lab.de/StenoBoard/README" type="text/plain; charset=utf-8"><text x="100" y="69" text-anchor="middle" font-size="9" font-family="serif" font-style="normal" font-weight="normal"><tspan fill="blue">software-lab.de/StenoBoard/README</tspan></text>
+</a>
+</g>
+<g transform="translate(246,20)">
+<text x="0" y="12" text-anchor="start" font-size="12" font-family="serif" font-style="normal" font-weight="bold">Stroke</text>
+</g>
+<g transform="translate(290,20)">
+<polyline fill="none" stroke="#000" stroke-width="1" points="0 30 90 30"/>
+<polyline fill="none" stroke="#000" stroke-width="1" points="0 60 90 60"/>
+<polyline fill="none" stroke="#000" stroke-width="1" points="30 0 30 90"/>
+<polyline fill="none" stroke="#000" stroke-width="1" points="60 0 60 90"/>
+<g transform="translate(0,7)">
+<text x="15" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">P</text>
+</g>
+<g transform="translate(30,7)">
+<text x="15" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">D</text>
+</g>
+<g transform="translate(60,7)">
+<text x="15" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">S</text>
+</g>
+<g transform="translate(0,37)">
+<text x="15" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">CP</text>
+</g>
+<g transform="translate(30,37)">
+<text x="15" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
+</g>
+<g transform="translate(60,37)">
+<text x="15" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">SA</text>
+</g>
+<g transform="translate(0,67)">
+<text x="15" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">C</text>
+</g>
+<g transform="translate(30,67)">
+<text x="15" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">F</text>
+</g>
+<g transform="translate(60,67)">
+<text x="15" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">A</text>
+</g>
+</g>
+<g transform="translate(420,20)">
+<text x="0" y="12" text-anchor="start" font-size="12" font-family="serif" font-style="normal" font-weight="bold">Tap</text>
+</g>
+<g transform="translate(450,20)">
+<polyline fill="none" stroke="#000" stroke-width="1" points="0 30 90 30"/>
+<polyline fill="none" stroke="#000" stroke-width="1" points="0 60 90 60"/>
+<polyline fill="none" stroke="#000" stroke-width="1" points="30 0 30 90"/>
+<polyline fill="none" stroke="#000" stroke-width="1" points="60 0 60 90"/>
+<g transform="translate(0,7)">
+<text x="15" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">3</text>
+</g>
+<g transform="translate(30,7)">
+<text x="15" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">ESC</text>
+</g>
+<g transform="translate(60,7)">
+<text x="15" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">321</text>
+</g>
+<g transform="translate(0,37)">
+<text x="15" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">BS</text>
+</g>
+<g transform="translate(30,37)">
+<text x="15" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">1</text>
+</g>
+<g transform="translate(60,37)">
+<text x="15" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">TAB</text>
+</g>
+<g transform="translate(0,67)">
+<text x="15" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">2</text>
+</g>
+<g transform="translate(30,67)">
+<text x="15" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">RET</text>
+</g>
+<g transform="translate(60,67)">
+<text x="15" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">21</text>
+</g>
+</g>
+<g transform="translate(30,160)">
+<g transform="translate(80,-20)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="bold">S</text>
+</g>
+<g transform="translate(350,-20)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="bold">S</text>
+</g>
+<g transform="translate(120,-20)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="bold">P</text>
+</g>
+<g transform="translate(390,-20)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="bold">P</text>
+</g>
+<g transform="translate(160,-20)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="bold">D</text>
+</g>
+<g transform="translate(430,-20)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="bold">D</text>
+</g>
+<g transform="translate(200,-20)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="bold">A</text>
+</g>
+<g transform="translate(470,-20)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="bold">A</text>
+</g>
+<polyline fill="none" stroke="black" stroke-width="1" points="240 -2 40 -2"/>
+<polyline fill="none" stroke="black" stroke-width="1" points="510 -2 310 -2"/>
+<g transform="translate(10,0)">
+<g transform="scale(1,1)">
+<rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
+<g transform="translate(11,0)">
+<text x="0" y="16" text-anchor="middle" font-size="16" font-family="serif" font-style="normal" font-weight="normal"><tspan fill="#AAA"> </tspan></text>
+</g>
+<g transform="translate(6,11)">
+<g transform="rotate(0)">
+<g transform="scale(1.0,1.0)">
+<circle cx="0" cy="0" r="1.5" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="0 -0.6 10 -0.6 9.4 -2.4 13.4 0 9.4 2.4 10 0.6 0 0.6"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(40,3)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">SP</text>
+</g>
+<g transform="translate(80,3)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">SP</text>
+</g>
+<g transform="translate(120,3)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">SP</text>
+</g>
+<g transform="translate(160,3)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">SP</text>
+</g>
+<g transform="translate(200,3)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">SP</text>
+</g>
+<g transform="translate(10,30)">
+<g transform="scale(1,1)">
+<rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
+<g transform="translate(11,0)">
+<text x="0" y="16" text-anchor="middle" font-size="16" font-family="serif" font-style="normal" font-weight="normal"><tspan fill="#AAA">A</tspan></text>
+</g>
+<g transform="translate(7,15)">
+<g transform="rotate(-45)">
+<g transform="scale(1.1,1.1)">
+<circle cx="0" cy="0" r="1.5" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="0 -0.6 10 -0.6 9.4 -2.4 13.4 0 9.4 2.4 10 0.6 0 0.6"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(40,33)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">a</text>
+</g>
+<g transform="translate(80,33)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">A</text>
+</g>
+<g transform="translate(120,33)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">&amp;</text>
+</g>
+<g transform="translate(160,33)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">TOP-R</text>
+</g>
+<g transform="translate(200,33)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">ä</text>
+</g>
+<g transform="translate(10,60)">
+<g transform="scale(1,1)">
+<rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
+<g transform="translate(11,0)">
+<text x="0" y="16" text-anchor="middle" font-size="16" font-family="serif" font-style="normal" font-weight="normal"><tspan fill="#AAA">B</tspan></text>
+</g>
+<g transform="translate(7,7)">
+<g transform="rotate(0)">
+<g transform="scale(0.8,0.8)">
+<circle cx="0" cy="0" r="1.5" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="0 -0.6 11.2 -0.6 11.2 4.8 13.0 4.2 10.6 9.2 8.2 4.2 10 4.8 10 0.6 0 0.6"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(40,63)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">b</text>
+</g>
+<g transform="translate(80,63)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">B</text>
+</g>
+<g transform="translate(120,63)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">\</text>
+</g>
+<g transform="translate(160,63)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">7</text>
+</g>
+<g transform="translate(200,63)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
+</g>
+<g transform="translate(10,90)">
+<g transform="scale(1,1)">
+<rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
+<g transform="translate(11,0)">
+<text x="0" y="16" text-anchor="middle" font-size="16" font-family="serif" font-style="normal" font-weight="normal"><tspan fill="#AAA">C</tspan></text>
+</g>
+<g transform="translate(16,7)">
+<g transform="rotate(180)">
+<g transform="scale(0.8,0.8)">
+<circle cx="0" cy="0" r="1.5" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="0 0.6 11.2 0.6 11.2 -4.8 13.0 -4.2 10.6 -9.2 8.2 -4.2 10 -4.8 10 -0.6 0 -0.6"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(40,93)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">c</text>
+</g>
+<g transform="translate(80,93)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">C</text>
+</g>
+<g transform="translate(120,93)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">^</text>
+</g>
+<g transform="translate(160,93)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">6</text>
+</g>
+<g transform="translate(200,93)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">😎</text>
+</g>
+<g transform="translate(10,120)">
+<g transform="scale(1,1)">
+<rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
+<g transform="translate(11,0)">
+<text x="0" y="16" text-anchor="middle" font-size="16" font-family="serif" font-style="normal" font-weight="normal"><tspan fill="#AAA">D</tspan></text>
+</g>
+<g transform="translate(10,16)">
+<g transform="rotate(-90)">
+<g transform="scale(0.9,0.9)">
+<circle cx="0" cy="0" r="1.5" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="0 -0.6 11.8 -0.6 11.8 0.6 0 0.6"/>
+<circle cx="11.8" cy="0" r="0.6" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="3 0 8 -2.4 7.4 -0.6 7.4 0.6 8 2.4"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(40,123)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">d</text>
+</g>
+<g transform="translate(80,123)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">D</text>
+</g>
+<g transform="translate(120,123)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">&quot;</text>
+</g>
+<g transform="translate(160,123)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">DOC</text>
+</g>
+<g transform="translate(200,123)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">Δ</text>
+</g>
+<g transform="translate(10,150)">
+<g transform="scale(1,1)">
+<rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
+<g transform="translate(11,0)">
+<text x="0" y="16" text-anchor="middle" font-size="16" font-family="serif" font-style="normal" font-weight="normal"><tspan fill="#AAA">E</tspan></text>
+</g>
+<g transform="translate(15,11)">
+<g transform="rotate(180)">
+<g transform="scale(0.8,0.8)">
+<circle cx="0" cy="0" r="1.5" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="0 -0.6 10 -0.6 9.4 -2.4 13.4 0 9.4 2.4 10 0.6 0 0.6"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(40,153)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">e</text>
+</g>
+<g transform="translate(80,153)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">E</text>
+</g>
+<g transform="translate(120,153)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">=</text>
+</g>
+<g transform="translate(160,153)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">NUM</text>
+</g>
+<g transform="translate(200,153)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">€</text>
+</g>
+<g transform="translate(10,180)">
+<g transform="scale(1,1)">
+<rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
+<g transform="translate(11,0)">
+<text x="0" y="16" text-anchor="middle" font-size="16" font-family="serif" font-style="normal" font-weight="normal"><tspan fill="#AAA">F</tspan></text>
+</g>
+<g transform="translate(15,11)">
+<g transform="rotate(180)">
+<g transform="scale(0.8,0.8)">
+<circle cx="0" cy="0" r="1.5" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="0 -0.6 11.8 -0.6 11.8 0.6 0 0.6"/>
+<circle cx="11.8" cy="0" r="0.6" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="3 0 8 -2.4 7.4 -0.6 7.4 0.6 8 2.4"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(40,183)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">f</text>
+</g>
+<g transform="translate(80,183)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">F</text>
+</g>
+<g transform="translate(120,183)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
+</g>
+<g transform="translate(160,183)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">8</text>
+</g>
+<g transform="translate(200,183)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
+</g>
+<g transform="translate(10,210)">
+<g transform="scale(1,1)">
+<rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
+<g transform="translate(11,0)">
+<text x="0" y="16" text-anchor="middle" font-size="16" font-family="serif" font-style="normal" font-weight="normal"><tspan fill="#AAA">G</tspan></text>
+</g>
+<g transform="translate(13,17)">
+<g transform="rotate(-135)">
+<g transform="scale(1.0,1.0)">
+<circle cx="0" cy="0" r="1.5" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="0 -0.6 11.2 -0.6 11.2 4.8 13.0 4.2 10.6 9.2 8.2 4.2 10 4.8 10 0.6 0 0.6"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(40,213)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">g</text>
+</g>
+<g transform="translate(80,213)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">G</text>
+</g>
+<g transform="translate(120,213)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">`</text>
+</g>
+<g transform="translate(160,213)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
+</g>
+<g transform="translate(200,213)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">º</text>
+</g>
+<g transform="translate(10,240)">
+<g transform="scale(1,1)">
+<rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
+<g transform="translate(11,0)">
+<text x="0" y="16" text-anchor="middle" font-size="16" font-family="serif" font-style="normal" font-weight="normal"><tspan fill="#AAA">H</tspan></text>
+</g>
+<g transform="translate(7,11)">
+<g transform="rotate(0)">
+<g transform="scale(0.8,0.8)">
+<circle cx="0" cy="0" r="1.5" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="0 0.6 11.2 0.6 11.2 -4.8 13.0 -4.2 10.6 -9.2 8.2 -4.2 10 -4.8 10 -0.6 0 -0.6"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(40,243)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">h</text>
+</g>
+<g transform="translate(80,243)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">H</text>
+</g>
+<g transform="translate(120,243)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">#</text>
+</g>
+<g transform="translate(160,243)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">-</text>
+</g>
+<g transform="translate(200,243)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">—</text>
+</g>
+<g transform="translate(10,270)">
+<g transform="scale(1,1)">
+<rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
+<g transform="translate(11,0)">
+<text x="0" y="16" text-anchor="middle" font-size="16" font-family="serif" font-style="normal" font-weight="normal"><tspan fill="#AAA">I</tspan></text>
+</g>
+<g transform="translate(12,16)">
+<g transform="rotate(-90)">
+<g transform="scale(0.9,0.9)">
+<circle cx="0" cy="0" r="1.5" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="0 -0.6 10 -0.6 9.4 -2.4 13.4 0 9.4 2.4 10 0.6 0 0.6"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(40,273)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">i</text>
+</g>
+<g transform="translate(80,273)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">I</text>
+</g>
+<g transform="translate(120,273)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
+</g>
+<g transform="translate(160,273)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">PASTE</text>
+</g>
+<g transform="translate(200,273)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
+</g>
+<g transform="translate(10,300)">
+<g transform="scale(1,1)">
+<rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
+<g transform="translate(11,0)">
+<text x="0" y="16" text-anchor="middle" font-size="16" font-family="serif" font-style="normal" font-weight="normal"><tspan fill="#AAA">J</tspan></text>
+</g>
+<g transform="translate(12,7)">
+<g transform="rotate(90)">
+<g transform="scale(0.9,0.9)">
+<circle cx="0" cy="0" r="1.5" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="0 -0.6 11.2 -0.6 11.2 4.8 13.0 4.2 10.6 9.2 8.2 4.2 10 4.8 10 0.6 0 0.6"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(40,303)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">j</text>
+</g>
+<g transform="translate(80,303)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">J</text>
+</g>
+<g transform="translate(120,303)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
+</g>
+<g transform="translate(160,303)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">9</text>
+</g>
+<g transform="translate(200,303)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
+</g>
+<g transform="translate(10,330)">
+<g transform="scale(1,1)">
+<rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
+<g transform="translate(11,0)">
+<text x="0" y="16" text-anchor="middle" font-size="16" font-family="serif" font-style="normal" font-weight="normal"><tspan fill="#AAA">K</tspan></text>
+</g>
+<g transform="translate(16,6)">
+<g transform="rotate(135)">
+<g transform="scale(0.9,0.9)">
+<circle cx="0" cy="0" r="1.5" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="0 0.6 11.2 0.6 11.2 -4.8 13.0 -4.2 10.6 -9.2 8.2 -4.2 10 -4.8 10 -0.6 0 -0.6"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(40,333)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">k</text>
+</g>
+<g transform="translate(80,333)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">K</text>
+</g>
+<g transform="translate(120,333)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">@</text>
+</g>
+<g transform="translate(160,333)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">2</text>
+</g>
+<g transform="translate(200,333)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">²</text>
+</g>
+<g transform="translate(10,360)">
+<g transform="scale(1,1)">
+<rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
+<g transform="translate(11,0)">
+<text x="0" y="16" text-anchor="middle" font-size="16" font-family="serif" font-style="normal" font-weight="normal"><tspan fill="#AAA">L</tspan></text>
+</g>
+<g transform="translate(10,5)">
+<g transform="rotate(90)">
+<g transform="scale(0.9,0.9)">
+<circle cx="0" cy="0" r="1.5" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="0 0.6 11.2 0.6 11.2 -4.8 13.0 -4.2 10.6 -9.2 8.2 -4.2 10 -4.8 10 -0.6 0 -0.6"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(40,363)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">l</text>
+</g>
+<g transform="translate(80,363)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">L</text>
+</g>
+<g transform="translate(120,363)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">&lt;</text>
+</g>
+<g transform="translate(160,363)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">4</text>
+</g>
+<g transform="translate(200,363)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">☺</text>
+</g>
+<g transform="translate(10,390)">
+<g transform="scale(1,1)">
+<rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
+<g transform="translate(11,0)">
+<text x="0" y="16" text-anchor="middle" font-size="16" font-family="serif" font-style="normal" font-weight="normal"><tspan fill="#AAA">M</tspan></text>
+</g>
+<g transform="translate(14,15)">
+<g transform="rotate(-135)">
+<g transform="scale(1.0,1.0)">
+<circle cx="0" cy="0" r="1.5" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="0 -0.6 11.8 -0.6 11.8 0.6 0 0.6"/>
+<circle cx="11.8" cy="0" r="0.6" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="3 0 8 -2.4 7.4 -0.6 7.4 0.6 8 2.4"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(40,393)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">m</text>
+</g>
+<g transform="translate(80,393)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">M</text>
+</g>
+<g transform="translate(120,393)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">&gt;</text>
+</g>
+<g transform="translate(160,393)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">MIC</text>
+</g>
+<g transform="translate(200,393)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
+</g>
+<g transform="translate(10,420)">
+<g transform="scale(1,1)">
+<rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
+<g transform="translate(11,0)">
+<text x="0" y="16" text-anchor="middle" font-size="16" font-family="serif" font-style="normal" font-weight="normal"><tspan fill="#AAA">N</tspan></text>
+</g>
+<g transform="translate(14,15)">
+<g transform="rotate(-135)">
+<g transform="scale(1.0,1.0)">
+<circle cx="0" cy="0" r="1.5" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="0 -0.6 10 -0.6 9.4 -2.4 13.4 0 9.4 2.4 10 0.6 0 0.6"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(40,423)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">n</text>
+</g>
+<g transform="translate(80,423)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">N</text>
+</g>
+<g transform="translate(120,423)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
+</g>
+<g transform="translate(160,423)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">TOP-L</text>
+</g>
+<g transform="translate(200,423)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">ñ</text>
+</g>
+<g transform="translate(10,450)">
+<g transform="scale(1,1)">
+<rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
+<g transform="translate(11,0)">
+<text x="0" y="16" text-anchor="middle" font-size="16" font-family="serif" font-style="normal" font-weight="normal"><tspan fill="#AAA">O</tspan></text>
+</g>
+<g transform="translate(6,10)">
+<g transform="rotate(-45)">
+<g transform="scale(0.8,0.8)">
+<circle cx="0" cy="0" r="1.5" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="0 -0.6 11.2 -0.6 11.2 4.8 13.0 4.2 10.6 9.2 8.2 4.2 10 4.8 10 0.6 0 0.6"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(40,453)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">o</text>
+</g>
+<g transform="translate(80,453)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">O</text>
+</g>
+<g transform="translate(120,453)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">|</text>
+</g>
+<g transform="translate(160,453)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">0</text>
+</g>
+<g transform="translate(200,453)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">ö</text>
+</g>
+<g transform="translate(280,0)">
+<g transform="scale(1,1)">
+<rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
+<g transform="translate(11,0)">
+<text x="0" y="16" text-anchor="middle" font-size="16" font-family="serif" font-style="normal" font-weight="normal"><tspan fill="#AAA">P</tspan></text>
+</g>
+<g transform="translate(10,15)">
+<g transform="rotate(-90)">
+<g transform="scale(0.9,0.9)">
+<circle cx="0" cy="0" r="1.5" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="0 -0.6 11.2 -0.6 11.2 4.8 13.0 4.2 10.6 9.2 8.2 4.2 10 4.8 10 0.6 0 0.6"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(310,3)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">p</text>
+</g>
+<g transform="translate(350,3)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">P</text>
+</g>
+<g transform="translate(390,3)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">%</text>
+</g>
+<g transform="translate(430,3)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
+</g>
+<g transform="translate(470,3)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">§</text>
+</g>
+<g transform="translate(280,30)">
+<g transform="scale(1,1)">
+<rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
+<g transform="translate(11,0)">
+<text x="0" y="16" text-anchor="middle" font-size="16" font-family="serif" font-style="normal" font-weight="normal"><tspan fill="#AAA">Q</tspan></text>
+</g>
+<g transform="translate(13,15)">
+<g transform="rotate(-90)">
+<g transform="scale(0.9,0.9)">
+<circle cx="0" cy="0" r="1.5" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="0 0.6 11.2 0.6 11.2 -4.8 13.0 -4.2 10.6 -9.2 8.2 -4.2 10 -4.8 10 -0.6 0 -0.6"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(310,33)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">q</text>
+</g>
+<g transform="translate(350,33)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">Q</text>
+</g>
+<g transform="translate(390,33)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">'</text>
+</g>
+<g transform="translate(430,33)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
+</g>
+<g transform="translate(470,33)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
+</g>
+<g transform="translate(280,60)">
+<g transform="scale(1,1)">
+<rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
+<g transform="translate(11,0)">
+<text x="0" y="16" text-anchor="middle" font-size="16" font-family="serif" font-style="normal" font-weight="normal"><tspan fill="#AAA">R</tspan></text>
+</g>
+<g transform="translate(9,8)">
+<g transform="rotate(45)">
+<g transform="scale(0.8,0.8)">
+<circle cx="0" cy="0" r="1.5" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="0 -0.6 10 -0.6 9.4 -2.4 13.4 0 9.4 2.4 10 0.6 0 0.6"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(310,63)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">r</text>
+</g>
+<g transform="translate(350,63)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">R</text>
+</g>
+<g transform="translate(390,63)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
+</g>
+<g transform="translate(430,63)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">BOT-R</text>
+</g>
+<g transform="translate(470,63)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">♥</text>
+</g>
+<g transform="translate(280,90)">
+<g transform="scale(1,1)">
+<rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
+<g transform="translate(11,0)">
+<text x="0" y="16" text-anchor="middle" font-size="16" font-family="serif" font-style="normal" font-weight="normal"><tspan fill="#AAA">S</tspan></text>
+</g>
+<g transform="translate(15,7)">
+<g transform="rotate(135)">
+<g transform="scale(1.0,1.0)">
+<circle cx="0" cy="0" r="1.5" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="0 -0.6 10 -0.6 9.4 -2.4 13.4 0 9.4 2.4 10 0.6 0 0.6"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(310,93)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">s</text>
+</g>
+<g transform="translate(350,93)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">S</text>
+</g>
+<g transform="translate(390,93)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">$</text>
+</g>
+<g transform="translate(430,93)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">BOT-L</text>
+</g>
+<g transform="translate(470,93)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">ß</text>
+</g>
+<g transform="translate(280,120)">
+<g transform="scale(1,1)">
+<rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
+<g transform="translate(11,0)">
+<text x="0" y="16" text-anchor="middle" font-size="16" font-family="serif" font-style="normal" font-weight="normal"><tspan fill="#AAA">T</tspan></text>
+</g>
+<g transform="translate(12,5)">
+<g transform="rotate(90)">
+<g transform="scale(0.9,0.9)">
+<circle cx="0" cy="0" r="1.5" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="0 -0.6 10 -0.6 9.4 -2.4 13.4 0 9.4 2.4 10 0.6 0 0.6"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(310,123)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">t</text>
+</g>
+<g transform="translate(350,123)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">T</text>
+</g>
+<g transform="translate(390,123)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">~</text>
+</g>
+<g transform="translate(430,123)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">QUIT</text>
+</g>
+<g transform="translate(470,123)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">👍</text>
+</g>
+<g transform="translate(280,150)">
+<g transform="scale(1,1)">
+<rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
+<g transform="translate(11,0)">
+<text x="0" y="16" text-anchor="middle" font-size="16" font-family="serif" font-style="normal" font-weight="normal"><tspan fill="#AAA">U</tspan></text>
+</g>
+<g transform="translate(12,5)">
+<g transform="rotate(90)">
+<g transform="scale(0.9,0.9)">
+<circle cx="0" cy="0" r="1.5" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="0 -0.6 11.8 -0.6 11.8 0.6 0 0.6"/>
+<circle cx="11.8" cy="0" r="0.6" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="3 0 8 -2.4 7.4 -0.6 7.4 0.6 8 2.4"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(310,153)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">u</text>
+</g>
+<g transform="translate(350,153)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">U</text>
+</g>
+<g transform="translate(390,153)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">_</text>
+</g>
+<g transform="translate(430,153)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">1</text>
+</g>
+<g transform="translate(470,153)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">ü</text>
+</g>
+<g transform="translate(280,180)">
+<g transform="scale(1,1)">
+<rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
+<g transform="translate(11,0)">
+<text x="0" y="16" text-anchor="middle" font-size="16" font-family="serif" font-style="normal" font-weight="normal"><tspan fill="#AAA">V</tspan></text>
+</g>
+<g transform="translate(6,8)">
+<g transform="rotate(45)">
+<g transform="scale(0.9,0.9)">
+<circle cx="0" cy="0" r="1.5" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="0 0.6 11.2 0.6 11.2 -4.8 13.0 -4.2 10.6 -9.2 8.2 -4.2 10 -4.8 10 -0.6 0 -0.6"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(310,183)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">v</text>
+</g>
+<g transform="translate(350,183)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">V</text>
+</g>
+<g transform="translate(390,183)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
+</g>
+<g transform="translate(430,183)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
+</g>
+<g transform="translate(470,183)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
+</g>
+<g transform="translate(280,210)">
+<g transform="scale(1,1)">
+<rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
+<g transform="translate(11,0)">
+<text x="0" y="16" text-anchor="middle" font-size="16" font-family="serif" font-style="normal" font-weight="normal"><tspan fill="#AAA">W</tspan></text>
+</g>
+<g transform="translate(7,7)">
+<g transform="rotate(45)">
+<g transform="scale(0.9,0.9)">
+<circle cx="0" cy="0" r="1.5" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="0 -0.6 11.8 -0.6 11.8 0.6 0 0.6"/>
+<circle cx="11.8" cy="0" r="0.6" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="3 0 8 -2.4 7.4 -0.6 7.4 0.6 8 2.4"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(310,213)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">w</text>
+</g>
+<g transform="translate(350,213)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">W</text>
+</g>
+<g transform="translate(390,213)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
+</g>
+<g transform="translate(430,213)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
+</g>
+<g transform="translate(470,213)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
+</g>
+<g transform="translate(280,240)">
+<g transform="scale(1,1)">
+<rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
+<g transform="translate(11,0)">
+<text x="0" y="16" text-anchor="middle" font-size="16" font-family="serif" font-style="normal" font-weight="normal"><tspan fill="#AAA">X</tspan></text>
+</g>
+<g transform="translate(9,5)">
+<g transform="rotate(45)">
+<g transform="scale(0.8,0.8)">
+<circle cx="0" cy="0" r="1.5" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="0 -0.6 11.2 -0.6 11.2 4.8 13.0 4.2 10.6 9.2 8.2 4.2 10 4.8 10 0.6 0 0.6"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(310,243)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">x</text>
+</g>
+<g transform="translate(350,243)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">X</text>
+</g>
+<g transform="translate(390,243)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
+</g>
+<g transform="translate(430,243)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
+</g>
+<g transform="translate(470,243)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
+</g>
+<g transform="translate(280,270)">
+<g transform="scale(1,1)">
+<rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
+<g transform="translate(11,0)">
+<text x="0" y="16" text-anchor="middle" font-size="16" font-family="serif" font-style="normal" font-weight="normal"><tspan fill="#AAA">Y</tspan></text>
+</g>
+<g transform="translate(8,15)">
+<g transform="rotate(-45)">
+<g transform="scale(0.8,0.8)">
+<circle cx="0" cy="0" r="1.5" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="0 0.6 11.2 0.6 11.2 -4.8 13.0 -4.2 10.6 -9.2 8.2 -4.2 10 -4.8 10 -0.6 0 -0.6"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(310,273)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">y</text>
+</g>
+<g transform="translate(350,273)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">Y</text>
+</g>
+<g transform="translate(390,273)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
+</g>
+<g transform="translate(430,273)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">*</text>
+</g>
+<g transform="translate(470,273)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
+</g>
+<g transform="translate(280,300)">
+<g transform="scale(1,1)">
+<rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
+<g transform="translate(11,0)">
+<text x="0" y="16" text-anchor="middle" font-size="16" font-family="serif" font-style="normal" font-weight="normal"><tspan fill="#AAA">Z</tspan></text>
+</g>
+<g transform="translate(7,11)">
+<g transform="rotate(0)">
+<g transform="scale(0.8,0.8)">
+<circle cx="0" cy="0" r="1.5" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="0 -0.6 11.8 -0.6 11.8 0.6 0 0.6"/>
+<circle cx="11.8" cy="0" r="0.6" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="3 0 8 -2.4 7.4 -0.6 7.4 0.6 8 2.4"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(310,303)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">z</text>
+</g>
+<g transform="translate(350,303)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">Z</text>
+</g>
+<g transform="translate(390,303)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
+</g>
+<g transform="translate(430,303)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">3</text>
+</g>
+<g transform="translate(470,303)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">³</text>
+</g>
+<g transform="translate(280,330)">
+<g transform="scale(1,1)">
+<rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
+<g transform="translate(11,0)">
+<text x="0" y="16" text-anchor="middle" font-size="16" font-family="serif" font-style="normal" font-weight="normal"><tspan fill="#AAA">,</tspan></text>
+</g>
+<g transform="translate(15,8)">
+<g transform="rotate(135)">
+<g transform="scale(0.8,0.8)">
+<circle cx="0" cy="0" r="1.5" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="0 -0.6 11.2 -0.6 11.2 4.8 13.0 4.2 10.6 9.2 8.2 4.2 10 4.8 10 0.6 0 0.6"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(310,333)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">,</text>
+</g>
+<g transform="translate(350,333)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">,</text>
+</g>
+<g transform="translate(390,333)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">;</text>
+</g>
+<g transform="translate(430,333)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">/</text>
+</g>
+<g transform="translate(470,333)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
+</g>
+<g transform="translate(280,360)">
+<g transform="scale(1,1)">
+<rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
+<g transform="translate(11,0)">
+<text x="0" y="16" text-anchor="middle" font-size="16" font-family="serif" font-style="normal" font-weight="normal"><tspan fill="#AAA">.</tspan></text>
+</g>
+<g transform="translate(15,14)">
+<g transform="rotate(-135)">
+<g transform="scale(0.8,0.8)">
+<circle cx="0" cy="0" r="1.5" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="0 0.6 11.2 0.6 11.2 -4.8 13.0 -4.2 10.6 -9.2 8.2 -4.2 10 -4.8 10 -0.6 0 -0.6"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(310,363)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">.</text>
+</g>
+<g transform="translate(350,363)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">.</text>
+</g>
+<g transform="translate(390,363)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">:</text>
+</g>
+<g transform="translate(430,363)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">.</text>
+</g>
+<g transform="translate(470,363)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
+</g>
+<g transform="translate(280,390)">
+<g transform="scale(1,1)">
+<rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
+<g transform="translate(11,0)">
+<text x="0" y="16" text-anchor="middle" font-size="16" font-family="serif" font-style="normal" font-weight="normal"><tspan fill="#AAA">?</tspan></text>
+</g>
+<g transform="translate(16,14)">
+<g transform="rotate(180)">
+<g transform="scale(0.8,0.8)">
+<circle cx="0" cy="0" r="1.5" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="0 -0.6 11.2 -0.6 11.2 4.8 13.0 4.2 10.6 9.2 8.2 4.2 10 4.8 10 0.6 0 0.6"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(310,393)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">?</text>
+</g>
+<g transform="translate(350,393)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">?</text>
+</g>
+<g transform="translate(390,393)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">!</text>
+</g>
+<g transform="translate(430,393)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">+</text>
+</g>
+<g transform="translate(470,393)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">±</text>
+</g>
+<g transform="translate(280,420)">
+<g transform="scale(1,1)">
+<rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
+<g transform="translate(11,0)">
+<text x="0" y="16" text-anchor="middle" font-size="16" font-family="serif" font-style="normal" font-weight="normal"><tspan fill="#AAA">(</tspan></text>
+</g>
+<g transform="translate(14,7)">
+<g transform="rotate(135)">
+<g transform="scale(0.8,0.8)">
+<circle cx="0" cy="0" r="1.5" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="0 -0.6 11.8 -0.6 11.8 0.6 0 0.6"/>
+<circle cx="11.8" cy="0" r="0.6" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="3 0 8 -2.4 7.4 -0.6 7.4 0.6 8 2.4"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(310,423)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">(</text>
+</g>
+<g transform="translate(350,423)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">{</text>
+</g>
+<g transform="translate(390,423)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">[</text>
+</g>
+<g transform="translate(430,423)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">5</text>
+</g>
+<g transform="translate(470,423)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
+</g>
+<g transform="translate(280,450)">
+<g transform="scale(1,1)">
+<rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
+<g transform="translate(11,0)">
+<text x="0" y="16" text-anchor="middle" font-size="16" font-family="serif" font-style="normal" font-weight="normal"><tspan fill="#AAA">)</tspan></text>
+</g>
+<g transform="translate(8,15)">
+<g transform="rotate(-45)">
+<g transform="scale(0.8,0.8)">
+<circle cx="0" cy="0" r="1.5" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="0 -0.6 11.8 -0.6 11.8 0.6 0 0.6"/>
+<circle cx="11.8" cy="0" r="0.6" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="3 0 8 -2.4 7.4 -0.6 7.4 0.6 8 2.4"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(310,453)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">)</text>
+</g>
+<g transform="translate(350,453)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">}</text>
+</g>
+<g transform="translate(390,453)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">]</text>
+</g>
+<g transform="translate(430,453)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">UPC</text>
+</g>
+<g transform="translate(470,453)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
+</g>
+</g>
+<g transform="translate(30,690)">
+<g transform="translate(80,-20)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="bold">F</text>
+</g>
+<g transform="translate(350,-20)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="bold">F</text>
+</g>
+<polyline fill="none" stroke="black" stroke-width="1" points="120 -2 40 -2"/>
+<polyline fill="none" stroke="black" stroke-width="1" points="390 -2 310 -2"/>
+<g transform="translate(10,0)">
+<g transform="scale(1,1)">
+<rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
+<g transform="translate(11,0)">
+<text x="0" y="16" text-anchor="middle" font-size="16" font-family="serif" font-style="normal" font-weight="normal"><tspan fill="#AAA">1</tspan></text>
+</g>
+<g transform="translate(12,5)">
+<g transform="rotate(90)">
+<g transform="scale(0.9,0.9)">
+<circle cx="0" cy="0" r="1.5" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="0 -0.6 11.8 -0.6 11.8 0.6 0 0.6"/>
+<circle cx="11.8" cy="0" r="0.6" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="3 0 8 -2.4 7.4 -0.6 7.4 0.6 8 2.4"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(40,3)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">1</text>
+</g>
+<g transform="translate(80,3)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">F1</text>
+</g>
+<g transform="translate(10,30)">
+<g transform="scale(1,1)">
+<rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
+<g transform="translate(11,0)">
+<text x="0" y="16" text-anchor="middle" font-size="16" font-family="serif" font-style="normal" font-weight="normal"><tspan fill="#AAA">2</tspan></text>
+</g>
+<g transform="translate(16,6)">
+<g transform="rotate(135)">
+<g transform="scale(0.9,0.9)">
+<circle cx="0" cy="0" r="1.5" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="0 0.6 11.2 0.6 11.2 -4.8 13.0 -4.2 10.6 -9.2 8.2 -4.2 10 -4.8 10 -0.6 0 -0.6"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(40,33)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">2</text>
+</g>
+<g transform="translate(80,33)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">F2</text>
+</g>
+<g transform="translate(10,60)">
+<g transform="scale(1,1)">
+<rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
+<g transform="translate(11,0)">
+<text x="0" y="16" text-anchor="middle" font-size="16" font-family="serif" font-style="normal" font-weight="normal"><tspan fill="#AAA">3</tspan></text>
+</g>
+<g transform="translate(7,11)">
+<g transform="rotate(0)">
+<g transform="scale(0.8,0.8)">
+<circle cx="0" cy="0" r="1.5" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="0 -0.6 11.8 -0.6 11.8 0.6 0 0.6"/>
+<circle cx="11.8" cy="0" r="0.6" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="3 0 8 -2.4 7.4 -0.6 7.4 0.6 8 2.4"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(40,63)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">3</text>
+</g>
+<g transform="translate(80,63)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">F3</text>
+</g>
+<g transform="translate(10,90)">
+<g transform="scale(1,1)">
+<rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
+<g transform="translate(11,0)">
+<text x="0" y="16" text-anchor="middle" font-size="16" font-family="serif" font-style="normal" font-weight="normal"><tspan fill="#AAA">4</tspan></text>
+</g>
+<g transform="translate(10,5)">
+<g transform="rotate(90)">
+<g transform="scale(0.9,0.9)">
+<circle cx="0" cy="0" r="1.5" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="0 0.6 11.2 0.6 11.2 -4.8 13.0 -4.2 10.6 -9.2 8.2 -4.2 10 -4.8 10 -0.6 0 -0.6"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(40,93)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">4</text>
+</g>
+<g transform="translate(80,93)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">F4</text>
+</g>
+<g transform="translate(10,120)">
+<g transform="scale(1,1)">
+<rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
+<g transform="translate(11,0)">
+<text x="0" y="16" text-anchor="middle" font-size="16" font-family="serif" font-style="normal" font-weight="normal"><tspan fill="#AAA">5</tspan></text>
+</g>
+<g transform="translate(14,7)">
+<g transform="rotate(135)">
+<g transform="scale(0.8,0.8)">
+<circle cx="0" cy="0" r="1.5" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="0 -0.6 11.8 -0.6 11.8 0.6 0 0.6"/>
+<circle cx="11.8" cy="0" r="0.6" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="3 0 8 -2.4 7.4 -0.6 7.4 0.6 8 2.4"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(40,123)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">5</text>
+</g>
+<g transform="translate(80,123)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">F5</text>
+</g>
+<g transform="translate(280,0)">
+<g transform="scale(1,1)">
+<rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
+<g transform="translate(11,0)">
+<text x="0" y="16" text-anchor="middle" font-size="16" font-family="serif" font-style="normal" font-weight="normal"><tspan fill="#AAA">6</tspan></text>
+</g>
+<g transform="translate(16,7)">
+<g transform="rotate(180)">
+<g transform="scale(0.8,0.8)">
+<circle cx="0" cy="0" r="1.5" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="0 0.6 11.2 0.6 11.2 -4.8 13.0 -4.2 10.6 -9.2 8.2 -4.2 10 -4.8 10 -0.6 0 -0.6"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(310,3)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">6</text>
+</g>
+<g transform="translate(350,3)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">F6</text>
+</g>
+<g transform="translate(280,30)">
+<g transform="scale(1,1)">
+<rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
+<g transform="translate(11,0)">
+<text x="0" y="16" text-anchor="middle" font-size="16" font-family="serif" font-style="normal" font-weight="normal"><tspan fill="#AAA">7</tspan></text>
+</g>
+<g transform="translate(7,7)">
+<g transform="rotate(0)">
+<g transform="scale(0.8,0.8)">
+<circle cx="0" cy="0" r="1.5" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="0 -0.6 11.2 -0.6 11.2 4.8 13.0 4.2 10.6 9.2 8.2 4.2 10 4.8 10 0.6 0 0.6"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(310,33)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">7</text>
+</g>
+<g transform="translate(350,33)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">F7</text>
+</g>
+<g transform="translate(280,60)">
+<g transform="scale(1,1)">
+<rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
+<g transform="translate(11,0)">
+<text x="0" y="16" text-anchor="middle" font-size="16" font-family="serif" font-style="normal" font-weight="normal"><tspan fill="#AAA">8</tspan></text>
+</g>
+<g transform="translate(15,11)">
+<g transform="rotate(180)">
+<g transform="scale(0.8,0.8)">
+<circle cx="0" cy="0" r="1.5" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="0 -0.6 11.8 -0.6 11.8 0.6 0 0.6"/>
+<circle cx="11.8" cy="0" r="0.6" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="3 0 8 -2.4 7.4 -0.6 7.4 0.6 8 2.4"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(310,63)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">8</text>
+</g>
+<g transform="translate(350,63)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">F8</text>
+</g>
+<g transform="translate(280,90)">
+<g transform="scale(1,1)">
+<rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
+<g transform="translate(11,0)">
+<text x="0" y="16" text-anchor="middle" font-size="16" font-family="serif" font-style="normal" font-weight="normal"><tspan fill="#AAA">9</tspan></text>
+</g>
+<g transform="translate(12,7)">
+<g transform="rotate(90)">
+<g transform="scale(0.9,0.9)">
+<circle cx="0" cy="0" r="1.5" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="0 -0.6 11.2 -0.6 11.2 4.8 13.0 4.2 10.6 9.2 8.2 4.2 10 4.8 10 0.6 0 0.6"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(310,93)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">9</text>
+</g>
+<g transform="translate(350,93)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">F9</text>
+</g>
+<g transform="translate(280,120)">
+<g transform="scale(1,1)">
+<rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
+<g transform="translate(11,0)">
+<text x="0" y="16" text-anchor="middle" font-size="16" font-family="serif" font-style="normal" font-weight="normal"><tspan fill="#AAA">0</tspan></text>
+</g>
+<g transform="translate(6,10)">
+<g transform="rotate(-45)">
+<g transform="scale(0.8,0.8)">
+<circle cx="0" cy="0" r="1.5" fill="#F00" stroke="none" stroke-width="1"/>
+<polygon fill="#F00" points="0 -0.6 11.2 -0.6 11.2 4.8 13.0 4.2 10.6 9.2 8.2 4.2 10 4.8 10 0.6 0 0.6"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(310,123)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">10</text>
+</g>
+<g transform="translate(350,123)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">F10</text>
+</g>
+</g>
+</svg>

@@ -1,0 +1,113 @@
+#!/usr/bin/pil
+# 12oct24 Software Lab. Alexander Burger
+
+(load "@lib/http.l" "@lib/xhtml.l" "@lib/svg.l")
+(load "svg.l")
+
+(symbols '(svg pico))
+
+(out "cheat.svg"
+   (<svg> *A4-DX *A4-DY "pt"
+      (window 21 30 200 90
+         (font 24 (ps 0 "StenoBoard"))
+         (font 18 (ps 0 "Cheat Sheet"))
+         (down 18)
+         (prin "<a href=\"https://software-lab.de/StenoBoard/README\" type=\"text/plain; charset=utf-8\">")
+         (font 9
+            (ps 0 '(C . "blue") "software-lab.de/StenoBoard/README" '(C)) )
+         (prinl "</a>") )
+      (window 246 20 1 1
+         (bold (font 12 (ps "Stroke"))) )
+      (fields 290 20
+         "P" "D" "S"
+         "CP" "" "SA"
+         "C" "F" "A" )
+      (window 420 20 1 1
+         (bold (font 12 (ps "Tap"))) )
+      (fields 450 20
+         "3" "ESC" "321"
+         "BS" "1" "TAB"
+         "2" "RET" "21" )
+      (window 30 160 1 1
+         (bold
+            (for (H . C) '("S" "P" "D" "A")
+               (window (+ 40 (* H 40)) -20 40 24
+                  (ps 0 C) )
+               (window (+ `(+ 40 270) (* H 40)) -20 40 24
+                  (ps 0 C) ) ) )
+         (hline -2 `(+ 40 (* 5 40)) 40)
+         (hline -2 `(+ 40 270 (* 5 40)) `(+ 40 270))
+         (let Lst
+            (quote
+               (stenoSP "SP" "SP" "SP" "SP" "SP" "RIGHT")
+               (stenoA "a" "A" "&" "TOP-R" "ä" "PGUP")
+               (stenoB "b" "B" "\\" "7" "" "F7")
+               (stenoC "c" "C" "\^" "6" "😎" "F6")
+               (stenoD "d" "D" "\"" "DOC" "Δ" "DEL")
+               (stenoE "e" "E" "=" "NUM" "€" "LEFT")
+               (stenoF "f" "F" "" "8" "" "F8")
+               (stenoG "g" "G" "`" "" "º" "")
+               (stenoH "h" "H" "#" "-" "—" "")
+               (stenoI "i" "I" "" "PASTE" "" "UP")
+               (stenoJ "j" "J" "" "9" "" "F7")
+               (stenoK "k" "K" "@" "2" "²" "F2")
+               (stenoL "l" "L" "<" "4" "☺" "F4")
+               (stenoM "m" "M" ">" "MIC" "" "")
+               (stenoN "n" "N" "" "TOP-L" "ñ" "HOME")
+               (stenoO "o" "O" "|" "0" "ö" "F10")
+               (stenoP "p" "P" "%" "" "§" "")
+               (stenoQ "q" "Q" "'" "" "" "BREAK")
+               (stenoR "r" "R" "" "BOT-R" "♥" "PGDOWN")
+               (stenoS "s" "S" "$" "BOT-L" "ß" "END")
+               (stenoT "t" "T" "~" "QUIT" "👍" "DOWN")
+               (stenoU "u" "U" "_" "1" "ü" "F1")
+               (stenoV "v" "V" "" "" "" "F11")
+               (stenoW "w" "W" "" "" "" "F12")
+               (stenoX "x" "X" "" "" "" "")
+               (stenoY "y" "Y" "" "*" "" "")
+               (stenoZ "z" "Z" "" "3" "³" "F3")
+               (stenoComma "," "," ";" "/" "" "INS")
+               (stenoDot "." "." ":" "." "" "")
+               (stenoQuest "?" "?" "!" "+" "±" "")
+               (stenoOpen "(" "{" "[" "5" "" "F5")
+               (stenoClose ")" "}" "]" "UPC" "" "") )
+            (for H 2
+               (for V 16
+                  (let X (* (dec H) 270)
+                     (let (Y (* (dec V) 30)  L (++ Lst))
+                        (let STROKE "#F00"
+                           ((++ L) (+ 10 X) Y 1) )
+                        (do 5
+                           (window (inc 'X 40) (+ 3 Y) 40 24
+                              (ps 0 (++ L)) ) ) ) ) ) ) ) )
+      (window 30 690 1 1
+         (bold
+            (window (+ 40 40) -20 40 24
+               (ps 0 "F") )
+            (window `(+ 40 270 40) -20 40 24
+               (ps 0 "F") ) )
+         (hline -2 `(+ 40 (* 2 40)) 40)
+         (hline -2 `(+ 40 270 (* 2 40)) `(+ 40 270))
+         (let Lst
+            (quote
+               (steno1 "1" "F1")
+               (steno2 "2" "F2")
+               (steno3 "3" "F3")
+               (steno4 "4" "F4")
+               (steno5 "5" "F5")
+               (steno6 "6" "F6")
+               (steno7 "7" "F7")
+               (steno8 "8" "F8")
+               (steno9 "9" "F9")
+               (steno0 "10" "F10") )
+            (for H 2
+               (for V 5
+                  (let X (* (dec H) 270)
+                     (let (Y (* (dec V) 30)  L (++ Lst))
+                        (let STROKE "#F00"
+                           ((++ L) (+ 10 X) Y 1) )
+                        (do 2
+                           (window (inc 'X 40) (+ 3 Y) 40 24
+                              (ps 0 (++ L)) ) ) ) ) ) ) ) ) ) )
+
+(call "rsvg-convert" "-f" "pdf" "-o" "cheat.pdf" "cheat.svg")

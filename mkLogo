@@ -1,0 +1,35 @@
+#!/usr/bin/pil
+# 13jun24 Software Lab. Alexander Burger
+
+(load "@lib/http.l" "@lib/xhtml.l" "@lib/svg.l")
+(load "svg.l")
+
+(symbols 'svg 'pico)
+
+(out (tmp "logo.svg")
+   (<svg> 288 288 "px"
+      (<tag> "defs" NIL
+         (<tag> "linearGradient"
+            (quote
+               (id . "grad")
+               (x1 . "0%")
+               (y1 . "0%")
+               (x2 . "100%")
+               (y2 . "100%") )
+            (prin "<stop offset=\"0%\" style=\"stop-color:white\"/>")
+            (prin "<stop offset=\"100%\" style=\"stop-color:#FA2\"/>") ) )
+      (rect 0 0 288 288 "url(#grad)")
+      (let STROKE "#F00"
+         (stenoA 0 0 13) ) ) )
+
+(call "rsvg-convert" "-f" "png" "-o" "logo.png" (tmp "logo.svg"))
+
+(mapc
+   '(((Dst . Size))
+      (call "convert" "-geometry" (pack Size "x" Size) "logo.png" Dst) )
+   (quote
+      ("res/drawable/icon_de_de.png" . 72)
+      ("res/mipmap-mdpi/ic_launcher.png" . 48)
+      ("res/mipmap-hdpi/ic_launcher.png" . 72)
+      ("res/mipmap-xhdpi/ic_launcher.png" . 96)
+      ("res/mipmap-xxhdpi/ic_launcher.png" . 144) ) )

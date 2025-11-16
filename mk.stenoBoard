@@ -1,0 +1,86 @@
+# 16nov25 Software Lab. Alexander Burger
+
+## openjdk-11-jdk-headless
+
+VERS=27
+NAME=25.8.25
+
+MINSDK=24
+TARGET=35
+BUNDLE=../bundle-tools
+TOOL=bundletool-all-1.17.1.jar
+PLATFORM=../platforms/android-35
+R8=../cmdline-tools/lib/r8.jar
+
+### Build Bundle ###
+mkdir -p cmp/
+$BUNDLE/aapt2 compile  -o cmp/  $(find res/ -type f)
+
+# Generate "cmp/proto.apk"
+$BUNDLE/aapt2 link --proto-format \
+   -o cmp/proto.apk \
+   --version-code $VERS \
+   --version-name $NAME \
+   --min-sdk-version $MINSDK \
+   --target-sdk-version $TARGET \
+   --manifest AndroidManifest.xml \
+   -I $PLATFORM/android.jar \
+   --auto-add-overlay \
+   -R cmp/*.flat \
+   --java src
+
+# Insert Version
+mv src/de/software_lab/stenoboard/R.java .
+sed "/public final class R {/a \\ \\ public static final String version = \"$VERS ($NAME)\";" R.java > src/de/software_lab/stenoboard/R.java
+rm R.java
+
+# Compile Java sources
+mkdir -p obj/
+javac -d obj/ \
+   -classpath $PLATFORM/android.jar \
+   src/de/software_lab/stenoboard/*.java
+
+# Generate "classes.dex"
+java -cp $R8 com.android.tools.r8.R8 \
+   --release \
+   --output . \
+   --min-api $MINSDK \
+   --pg-conf proguard.cfg \
+   --lib $PLATFORM/android.jar \
+   obj/de/software_lab/stenoboard/*.class
+
+# Generate "cmp/base.zip"
+(cd cmp/manifest/; jar xf ../proto.apk AndroidManifest.xml)
+(cd cmp/; jar xf proto.apk res/)
+(cd cmp/; jar xf proto.apk resources.pb)
+(cd cmp/; mv ../classes.dex dex/; zip -rFSq base.zip manifest/ dex/ res/ resources.pb)
+
+# Build bundle "stenoBoard.aab"
+java -jar $BUNDLE/$TOOL build-bundle \
+   --modules=cmp/base.zip \
+   --overwrite --output=stenoBoard.aab
+
+# Sign "stenoBoard.aab"
+jarsigner \
+   -sigalg SHA256withRSA \
+   -digestalg SHA-256 \
+   -keystore ../key.jks \
+   stenoBoard.aab bndkey
+
+### Build APK ###
+java -jar $BUNDLE/$TOOL build-apks \
+   --bundle=stenoBoard.aab \
+   --output=stenoBoard.apks \
+   --ks=../key.jks \
+   --ks-key-alias=appkey \
+   --mode=universal
+unzip -p stenoBoard.apks universal.apk > stenoBoard.apk
+
+# Clean up
+rm -r \
+   src/de/software_lab/stenoboard/R.java \
+   obj/de/software_lab/stenoboard/*.class \
+   cmp/dex/classes.dex cmp/*.flat cmp/proto.apk \
+   cmp/manifest/AndroidManifest.xml \
+   cmp/res/* cmp/resources.pb cmp/base.zip \
+   stenoBoard.apks
