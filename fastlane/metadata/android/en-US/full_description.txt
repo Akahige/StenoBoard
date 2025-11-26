@@ -1,0 +1,9 @@
+Virtual keyboard for Android, which allows to input any character
+(letter, digit, punctuation or control) and function or navigation key
+with a single stroke or tap.
+
+A "stroke" is a movement on one of nine fields on the screen, in one of
+eight directions over a certain minimal distance, ending in one of four
+gestures.
+
+Full documentation in https://software-lab.de/StenoBoard/README
