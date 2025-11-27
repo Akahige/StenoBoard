@@ -1,5 +1,5 @@
 #!/usr/bin/pil
-# 12oct24 Software Lab. Alexander Burger
+# 27nov25 Software Lab. Alexander Burger
 
 (load "@lib/http.l" "@lib/xhtml.l" "@lib/svg.l")
 (load "svg.l")
@@ -41,7 +41,7 @@
             (quote
                (stenoSP "SP" "SP" "SP" "SP" "SP" "RIGHT")
                (stenoA "a" "A" "&" "TOP-R" "ä" "PGUP")
-               (stenoB "b" "B" "\\" "7" "" "F7")
+               (stenoB "b" "B" "\\" "7" "😰" "F7")
                (stenoC "c" "C" "\^" "6" "😎" "F6")
                (stenoD "d" "D" "\"" "DOC" "Δ" "DEL")
                (stenoE "e" "E" "=" "NUM" "€" "LEFT")
@@ -69,8 +69,8 @@
                (stenoComma "," "," ";" "/" "" "INS")
                (stenoDot "." "." ":" "." "" "")
                (stenoQuest "?" "?" "!" "+" "±" "")
-               (stenoOpen "(" "{" "[" "5" "" "F5")
-               (stenoClose ")" "}" "]" "UPC" "" "") )
+               (stenoOpen "(" "{" "[" "5" "👉" "F5")
+               (stenoClose ")" "}" "]" "UPC" "👈" "") )
             (for H 2
                (for V 16
                   (let X (* (dec H) 270)

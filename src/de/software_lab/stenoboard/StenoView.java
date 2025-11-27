@@ -1,4 +1,4 @@
-// 25aug25 Software Lab. Alexander Burger
+// 27nov25 Software Lab. Alexander Burger
 
 package de.software_lab.stenoboard;
 
@@ -89,9 +89,9 @@ public class StenoView extends View implements RecognitionListener {
    };
    final static int StenoAltGr[] = new int[] {
       32, 9829, 128077, 'ß', '€', 'ñ', 0, 'ä',
-      0, '—', '³', 0, 0, 0, 0, '☺',
-      'ü', 0, '²', 0, '±', 128526, 0, 'º',
-      0, 0, '§', 0, 'Δ', 'ö', 0, 0
+      128560, '—', '³', 0, 0, 0, 0, '☺',
+      'ü', 0, '²', 128073, '±', 128526, 0, 'º',
+      0, 0, '§', 0, 'Δ', 'ö', 0, 128072
    };
    final static int StenoFunct[] = new int[] {
       -KeyEvent.KEYCODE_DPAD_RIGHT, -KeyEvent.KEYCODE_PAGE_DOWN, -KeyEvent.KEYCODE_DPAD_DOWN, -KeyEvent.KEYCODE_MOVE_END, -KeyEvent.KEYCODE_DPAD_LEFT, -KeyEvent.KEYCODE_MOVE_HOME, -KeyEvent.KEYCODE_DPAD_UP, -KeyEvent.KEYCODE_PAGE_UP,
@@ -106,7 +106,7 @@ public class StenoView extends View implements RecognitionListener {
    final static String StenoHelp[][] = new String[][] {
       {"E", "SP", "SP", "SP", "SP", "SP", "RIGHT"},
       {"NE", "a", "A", "&", "TOP-R", "ä", "PGUP"},
-      {"E-R", "b", "B", "\\", "7", null, "F7"},
+      {"E-R", "b", "B", "\\", "7", "😰", "F7"},
       {"W-L", "c", "C", "^", "6", "😎", "F6"},
       {"N-B", "d", "D", "\"", "DOC", "Δ", "DEL"},
       {"W", "e", "E", "=", "NUM", "€", "LEFT"},
@@ -134,8 +134,8 @@ public class StenoView extends View implements RecognitionListener {
       {"SW-R", ",", ",", ";", "/", null, "INS"},
       {"NW-L", ".", ".", ":", ".", null, null},
       {"W-R", "?", "?", "!", "+", "±", null},
-      {"SW-B", "(", "{", "[", "5", null, "F5"},
-      {"NE-B", ")", "}", "]", "UPC", null, null}
+      {"SW-B", "(", "{", "[", "5", "👉", "F5"},
+      {"NE-B", ")", "}", "]", "UPC", "👈", null}
    };
 
    public StenoView(Context context, AttributeSet attrs) {

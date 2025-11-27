@@ -1,9 +1,9 @@
-# 16nov25 Software Lab. Alexander Burger
+# 27nov25 Software Lab. Alexander Burger
 
 ## openjdk-11-jdk-headless
 
-VERS=27
-NAME=25.8.25
+VERS=28
+NAME=25.11.27
 
 MINSDK=24
 TARGET=35

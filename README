@@ -1,5 +1,5 @@
 # VIP (=: flat T)
-# 25nov25 Software Lab. Alexander Burger
+# 27nov25 Software Lab. Alexander Burger
 
       StenoBoard
       ==========
@@ -194,10 +194,13 @@ AltGr field. Typical ones are:
    §  A-P Paragraph
    ²  A-2
    ³  A-3
+   😰 A-B [B]ad
    😎 A-C [C]ool
    ☺  A-L [L]augh
    ♥  A-R Hea[r]t
    👍 A-T [T]humb
+   👉 A-( Right
+   👈 A-) Left
 
 
       Function Keys
