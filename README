@@ -1,5 +1,5 @@
 # VIP (=: flat T)
-# 27nov25 Software Lab. Alexander Burger
+# 28nov25 Software Lab. Alexander Burger
 
       StenoBoard
       ==========
@@ -261,7 +261,7 @@ terminal multiplexer:
       Special Keys
       ------------
 
-The following keys control StenoBoard itself and are all generated in
+The following keys control StenoBoard itself, and are all generated in
 the Digit field:
 
 * Plain strokes South East, South West, North West or North East move
@@ -409,3 +409,12 @@ This results in an installable APK file "stenoBoard.apk".
    Bahnhofstr. 24a, D-86462 Langweid
    abu@software-lab.de
    @abu:7fach.de
+
+You also can ask life questions about StenoBoard at our weekly PicoLisp
+meetings
+
+   Fridays for Functions
+
+every Friday 9:00-17:00 UTC on Jitsi
+
+   https://meeting.itship.ch/picolisp
