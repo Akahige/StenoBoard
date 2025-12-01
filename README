@@ -1,5 +1,5 @@
 # VIP (=: flat T)
-# 28nov25 Software Lab. Alexander Burger
+# 30nov25 Software Lab. Alexander Burger
 
       StenoBoard
       ==========
@@ -180,7 +180,7 @@ The characters written in the Punctuation field are easy to memorize:
       AltGr
       -----
 
-Some language specific characters and a few smileys are generated in the
+Some language specific characters and a few emojis are generated in the
 AltGr field. Typical ones are:
 
    ä  A-A
@@ -234,7 +234,7 @@ In addition to the normal control keys "^A" through "^Z", the keys for
 space, ",", ".", "?", "(" and ")" are also assigned.
 
 Ctrl-space toggles candidate input on/off (e.g. Japanese or
-language-specific letters, but also some smileys via "$"). Typing text
+language-specific letters, but also some emojis via "$"). Typing text
 will then display matching candidates in the top row of the screen. This
 list can be scrolled forward with TAB and backward with BS. Either tap
 on one of them to use it, tap RET to use the first one, tap ESC to
