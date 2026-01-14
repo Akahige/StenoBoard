@@ -1,5 +1,5 @@
 # VIP (=: flat T)
-# 30nov25 Software Lab. Alexander Burger
+# 14jan26 Software Lab. Alexander Burger
 
       StenoBoard
       ==========
@@ -343,7 +343,7 @@ Docs
       Building StenoBoard
       -------------------
 
-First make sure to have Java-11 installed
+First make sure to have Java-21 installed
 
    $ update-alternatives --config java
 
@@ -367,7 +367,7 @@ for Linux from the "Command line tools onl" section, unpack it,
 and use the SDK Manager to install the following packages:
 
    $ cmdline-tools/bin/sdkmanager --sdk_root=. "platform-tools"
-   $ cmdline-tools/bin/sdkmanager --sdk_root=. "platforms;android-34"
+   $ cmdline-tools/bin/sdkmanager --sdk_root=. "platforms;android-35"
    $ cmdline-tools/bin/sdkmanager --sdk_root=. "tools"
 
 To build an app bundle, we need "bundletool":
@@ -375,13 +375,21 @@ To build an app bundle, we need "bundletool":
    $ mkdir bundle-tools
    $ cd bundle-tools/
 
+Download the current version (e.g. bundletool-all-1.18.3.jar) from
+https://github.com/google/bundletool/releases and put it into this
+directory.
+
 Get AAPT2 from Google's Maven repository (https://maven.google.com):
 
 Currently, the latest is
 
-   https://dl.google.com/dl/android/maven2/com/android/tools/build/aapt2/8.8.0-alpha04-12006047/aapt2-8.8.0-alpha04-12006047-linux.jar
+   https://dl.google.com/dl/android/maven2/com/android/tools/build/aapt2/9.0.0-rc03-14304508/aapt2-9.0.0-rc03-14304508-linux.jar
 
-Download and unpackage the downloaded JAR file.
+Download and unpackage the downloaded JAR file:
+
+   curl -O https://dl.google.com/dl/android/maven2/com/android/tools/build/aapt2/9.0.0-rc03-14304508/aapt2-9.0.0-rc03-14304508-linux.jar
+   jar xvf aapt2-9.0.0-rc03-14304508-linux.jar
+   chmod +x aapt2
 
 You will need to create your own keystore with two keys for signing the
 APK and Bundles later

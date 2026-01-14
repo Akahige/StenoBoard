@@ -1,14 +1,14 @@
-# 27nov25 Software Lab. Alexander Burger
+# 14jan26 Software Lab. Alexander Burger
 
-## openjdk-11-jdk-headless
+## openjdk-21-jdk-headless
 
-VERS=28
-NAME=25.11.27
+VERS=29
+NAME=26.1.14
 
 MINSDK=24
 TARGET=35
 BUNDLE=../bundle-tools
-TOOL=bundletool-all-1.17.1.jar
+TOOL=bundletool-all-1.18.3.jar
 PLATFORM=../platforms/android-35
 R8=../cmdline-tools/lib/r8.jar
 
@@ -36,7 +36,8 @@ rm R.java
 
 # Compile Java sources
 mkdir -p obj/
-javac -d obj/ \
+javac --release 11 \
+   -d obj/ \
    -classpath $PLATFORM/android.jar \
    src/de/software_lab/stenoboard/*.java
 
