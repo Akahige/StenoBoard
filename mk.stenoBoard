@@ -1,9 +1,9 @@
-# 14jan26 Software Lab. Alexander Burger
+# 26mar26 Software Lab. Alexander Burger
 
 ## openjdk-21-jdk-headless
 
-VERS=29
-NAME=26.1.14
+VERS=30
+NAME=26.3.26
 
 MINSDK=24
 TARGET=35

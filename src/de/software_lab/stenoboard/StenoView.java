@@ -1,4 +1,4 @@
-// 27nov25 Software Lab. Alexander Burger
+// 26mar26 Software Lab. Alexander Burger
 
 package de.software_lab.stenoboard;
 
@@ -933,7 +933,7 @@ public class StenoView extends View implements RecognitionListener {
    }
 
    void hapt() {
-      performHapticFeedback(HapticFeedbackConstants.KEYBOARD_TAP);
+      performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);
    }
 
    static void dly() {
