@@ -1,0 +1,16 @@
+26.4.26
+   AutoComplete (Digit-space)
+   Clean up dictionary
+   Minor bug fixes
+      src/de/software_lab/stenoboard/StenoView.java
+      src/de/software_lab/stenoboard/StenoIME.java
+      res/raw/dict
+      mkCheat
+      cheat.svg
+      cheat.pdf
+      README
+
+   Note: The internal dictionary structure changed. It is recommended to
+   "Clear storage" in the settings once.
+
+
