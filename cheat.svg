@@ -130,7 +130,7 @@
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">SP</text>
 </g>
 <g transform="translate(160,3)">
-<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">SP</text>
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">AUTO</text>
 </g>
 <g transform="translate(200,3)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">SP</text>
@@ -632,7 +632,7 @@
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">%</text>
 </g>
 <g transform="translate(430,3)">
-<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">PUSH</text>
 </g>
 <g transform="translate(470,3)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">§</text>
@@ -820,7 +820,7 @@
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
 </g>
 <g transform="translate(430,183)">
-<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">VERS</text>
 </g>
 <g transform="translate(470,183)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
@@ -853,7 +853,7 @@
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
 </g>
 <g transform="translate(430,213)">
-<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">WIPE</text>
 </g>
 <g transform="translate(470,213)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>

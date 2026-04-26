@@ -1,4 +1,4 @@
-// 23oct24abu
+// 16apr26abu
 // (c) Software Lab. Alexander Burger
 
 package de.software_lab.stenoboard;
@@ -22,7 +22,7 @@ public class StenoIME extends InputMethodService implements SensorEventListener 
    @Override public View onCreateCandidatesView() {
       SV = (StenoView)getLayoutInflater().inflate(R.layout.input, null);
       SV.Ime = this;
-      SV.reset();
+      SV.reset(null, true);
       return SV;
    }
 

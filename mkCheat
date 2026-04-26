@@ -1,5 +1,5 @@
 #!/usr/bin/pil
-# 27nov25 Software Lab. Alexander Burger
+# 22apr26 Software Lab. Alexander Burger
 
 (load "@lib/http.l" "@lib/xhtml.l" "@lib/svg.l")
 (load "svg.l")
@@ -39,7 +39,7 @@
          (hline -2 `(+ 40 270 (* 5 40)) `(+ 40 270))
          (let Lst
             (quote
-               (stenoSP "SP" "SP" "SP" "SP" "SP" "RIGHT")
+               (stenoSP "SP" "SP" "SP" "AUTO" "SP" "RIGHT")
                (stenoA "a" "A" "&" "TOP-R" "ä" "PGUP")
                (stenoB "b" "B" "\\" "7" "😰" "F7")
                (stenoC "c" "C" "\^" "6" "😎" "F6")
@@ -55,14 +55,14 @@
                (stenoM "m" "M" ">" "MIC" "" "")
                (stenoN "n" "N" "" "TOP-L" "ñ" "HOME")
                (stenoO "o" "O" "|" "0" "ö" "F10")
-               (stenoP "p" "P" "%" "" "§" "")
+               (stenoP "p" "P" "%" "PUSH" "§" "")
                (stenoQ "q" "Q" "'" "" "" "BREAK")
                (stenoR "r" "R" "" "BOT-R" "♥" "PGDOWN")
                (stenoS "s" "S" "$" "BOT-L" "ß" "END")
                (stenoT "t" "T" "~" "QUIT" "👍" "DOWN")
                (stenoU "u" "U" "_" "1" "ü" "F1")
-               (stenoV "v" "V" "" "" "" "F11")
-               (stenoW "w" "W" "" "" "" "F12")
+               (stenoV "v" "V" "" "VERS" "" "F11")
+               (stenoW "w" "W" "" "WIPE" "" "F12")
                (stenoX "x" "X" "" "" "" "")
                (stenoY "y" "Y" "" "*" "" "")
                (stenoZ "z" "Z" "" "3" "³" "F3")
