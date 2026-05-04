@@ -1,4 +1,4 @@
-// 25apr26 Software Lab. Alexander Burger
+// 04may26 Software Lab. Alexander Burger
 
 package de.software_lab.stenoboard;
 
@@ -673,8 +673,7 @@ public class StenoView extends View implements RecognitionListener {
             wipe();
             dly();
             if (AutoComplete.length() == 0  ||  Auto < 0) {
-               if (AutoComplete.length() >= 6)
-                  putDict(AutoComplete);
+               putDictAuto();
                key(KeyEvent.KEYCODE_TAB);
                dly();
                reset("", true);
@@ -695,8 +694,7 @@ public class StenoView extends View implements RecognitionListener {
             wipe();
             dly();
             if (AutoComplete.length() == 0  ||  Auto < 0) {
-               if (AutoComplete.length() >= 6)
-                  putDict(AutoComplete);
+               putDictAuto();
                key(KeyEvent.KEYCODE_ENTER);
                dly();
             }
@@ -708,8 +706,7 @@ public class StenoView extends View implements RecognitionListener {
          else if (c == -KeyEvent.KEYCODE_ESCAPE) {
             wipe();
             dly();
-            if (AutoComplete.length() >= 6)
-               putDict(AutoComplete);
+            putDictAuto();
             reset("", true);
             dictText();
          }
@@ -722,9 +719,8 @@ public class StenoView extends View implements RecognitionListener {
          else {
             wipe();
             dly();
-            if (" !\"',.:;?".indexOf(c) >= 0) {
-               if (AutoComplete.length() >= 6)
-                  putDict(AutoComplete);
+            if (" !\"'()*,-.:;?".indexOf(c) >= 0) {
+               putDictAuto();
                reset("", true);
                text(s);
             }
@@ -748,14 +744,14 @@ public class StenoView extends View implements RecognitionListener {
             text(clipboard());
             break;
          case 0x100001:  // AUTO
-            Auto = -1;
             if (AutoComplete == null) {
-               AutoComplete = "";
+               reset("", true);
                dictText();
             }
             else {
                wipe();
-               AutoComplete = null;
+               putDictAuto();
+               reset(null, true);
             }
             break;
          case 0x10000B:  // WIPE
@@ -835,32 +831,6 @@ public class StenoView extends View implements RecognitionListener {
       if (cm == null  ||  !cm.hasPrimaryClip())
          return "";
       return cm.getPrimaryClip().getItemAt(0).coerceToText(getContext()).toString();
-   }
-
-   void key(int c) {
-      synchronized (Ime) {
-         Ime.sendDownUpKeyEvents(c);
-      }
-   }
-
-   void text(String s) {
-      if (Upc) {
-         s = s.substring(0,1).toUpperCase() + s.substring(1);
-         Upc = false;
-      }
-      synchronized (Ime) {
-         Ime.getCurrentInputConnection().commitText(s,1);
-      }
-      Wipe = s.codePointCount(0, s.length());
-   }
-
-   void wipe() {
-      synchronized (Ime) {
-         while (Wipe > 0) {
-            Ime.sendDownUpKeyEvents(KeyEvent.KEYCODE_DEL);
-            --Wipe;
-         }
-      }
    }
 
    void dotLine(Canvas canvas, float x1, float y1, float x2, float y2) {
@@ -1036,6 +1006,11 @@ public class StenoView extends View implements RecognitionListener {
       }
    }
 
+   void putDictAuto() {
+      if (AutoComplete.length() > 4)
+         putDict(AutoComplete);
+   }
+
    void putDict(String s) {
       int a = 0;
       int z = Dict.length - 1;
@@ -1139,6 +1114,32 @@ public class StenoView extends View implements RecognitionListener {
          text("·");
       else
          text("·" + dictKey(Auto).substring(AutoComplete.length()));
+   }
+
+   void key(int c) {
+      synchronized (Ime) {
+         Ime.sendDownUpKeyEvents(c);
+      }
+   }
+
+   void text(String s) {
+      if (Upc) {
+         s = s.substring(0,1).toUpperCase() + s.substring(1);
+         Upc = false;
+      }
+      synchronized (Ime) {
+         Ime.getCurrentInputConnection().commitText(s,1);
+      }
+      Wipe = s.codePointCount(0, s.length());
+   }
+
+   void wipe() {
+      synchronized (Ime) {
+         while (Wipe > 0) {
+            Ime.sendDownUpKeyEvents(KeyEvent.KEYCODE_DEL);
+            --Wipe;
+         }
+      }
    }
 
    public void onBeginningOfSpeech() {}
