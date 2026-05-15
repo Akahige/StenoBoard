@@ -1,3 +1,7 @@
+26.5.15
+   AutoComplete off for special StenoBoard control keys
+      src/de/software_lab/stenoboard/StenoView.java
+
 26.5.4
    Add "(", ")", "*" and "-" to delimiters
       src/de/software_lab/stenoboard/StenoView.java

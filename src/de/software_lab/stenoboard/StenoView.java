@@ -1,4 +1,4 @@
-// 04may26 Software Lab. Alexander Burger
+// 15may26 Software Lab. Alexander Burger
 
 package de.software_lab.stenoboard;
 
@@ -733,7 +733,23 @@ public class StenoView extends View implements RecognitionListener {
             dictText();
          }
       }
+      else if (c == 0x100001) {  // AUTO
+         if (AutoComplete == null) {
+            reset("", true);
+            dictText();
+         }
+         else {
+            wipe();
+            putDictAuto();
+            reset(null, true);
+         }
+      }
       else {
+         if (AutoComplete != null) {
+            wipe();
+            dly();
+            reset(null, true);
+         }
          switch (c) {
          case 0x100000:  // CNTRL-SPACE
             needDict();
@@ -742,17 +758,6 @@ public class StenoView extends View implements RecognitionListener {
             break;
          case 0x100007:  // PASTE
             text(clipboard());
-            break;
-         case 0x100001:  // AUTO
-            if (AutoComplete == null) {
-               reset("", true);
-               dictText();
-            }
-            else {
-               wipe();
-               putDictAuto();
-               reset(null, true);
-            }
             break;
          case 0x10000B:  // WIPE
             wipe();
