@@ -1,4 +1,4 @@
-// 15may26 Software Lab. Alexander Burger
+// 24may26 Software Lab. Alexander Burger
 
 package de.software_lab.stenoboard;
 
@@ -631,7 +631,7 @@ public class StenoView extends View implements RecognitionListener {
                return;
             }
             else if (c >= 32  &&  c < 0x100000)
-               Candidates[0] = Candidates[0] + (char)c;
+               Candidates[0] = Candidates[0] + Character.toString(c);
             if (Candidates[0].length() > 0) {
                int a = 0;
                int z = Dict.length - 1;
