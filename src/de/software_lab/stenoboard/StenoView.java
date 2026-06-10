@@ -1,4 +1,4 @@
-// 24may26 Software Lab. Alexander Burger
+// 10jun26 Software Lab. Alexander Burger
 
 package de.software_lab.stenoboard;
 
@@ -19,6 +19,7 @@ import android.content.ClipboardManager;
 import android.content.ClipDescription;
 import android.content.ClipData;
 import android.media.AudioManager;
+import android.media.ToneGenerator;
 import android.provider.Settings;
 import android.speech.SpeechRecognizer;
 import android.speech.RecognitionListener;
@@ -38,6 +39,7 @@ public class StenoView extends View implements RecognitionListener {
    final Paint Text2 = new Paint();
    final Paint[] Lines = new Paint[5];
    final int[] Colors = new int[]{Color.WHITE, Color.BLACK, Color.RED, Color.GREEN, Color.BLUE};
+   ToneGenerator Tone;
    String Dict[];
    File DictFile;
    String AutoComplete;
@@ -80,7 +82,7 @@ public class StenoView extends View implements RecognitionListener {
       0x100001, 0x100002, 0x100003, 0x100004, 0x100005, 0x100006, 0x100007, 0x100008,
       '7', '-', '3', 0, 0x10000A, 0x10000B, '9', '4',
       '1', '/', '2', '5', '+', '6', '8', 0,
-      '.', 0x10000D, 0x10000E, 0, 0x100010, '0', '*', 0x100011
+      '.', 0x10000D, 0x10000E, 0x10000F, 0x100010, '0', '*', 0x100011
    };
    final static int StenoPunct[] = new int[] {
       32, 0, '~', '$', '=', 0, 0, '&',
@@ -122,7 +124,7 @@ public class StenoView extends View implements RecognitionListener {
       {"NW", "n", "N", null, "TOP-L", "ñ", "HOME"},
       {"NE-R", "o", "O", "|", "0", "ö", "F10"},
       {"N-R", "p", "P", "%", "PUSH", "§", null},
-      {"N-L", "q", "Q", "'", null, null, "BREAK"},
+      {"N-L", "q", "Q", "'", "QUIET", null, "BREAK"},
       {"SE", "r", "R", null, "BOT-R", "♥", "PGDOWN"},
       {"SW", "s", "S", "$", "BOT-L", "ß", "END"},
       {"S", "t", "T", "~", "QUIT", "👍", "DOWN"},
@@ -175,7 +177,7 @@ public class StenoView extends View implements RecognitionListener {
                   String s = Candidates[i];
                   int c = s.codePointAt(0);
 
-                  hapt();
+                  feedback();
                   Repeat3 = Repeat2;
                   Repeat2 = Repeat;
                   Vis = Repeat = c;
@@ -250,7 +252,7 @@ public class StenoView extends View implements RecognitionListener {
                   else if (Settings.System.canWrite(Ime)) {
                      if (Math.abs(x) >= Math.abs(y)) {
                         if (x <= -Size/2  ||  x >= Size/2) {
-                           hapt();
+                           feedback();
                            ((AudioManager)Ime.getSystemService(Context.AUDIO_SERVICE)).adjustVolume(x > 0? 1 : -1, 0);
                            ActTime = -2;
                            BegX += x;
@@ -259,7 +261,7 @@ public class StenoView extends View implements RecognitionListener {
                      }
                      else {
                         if (y <= -Size/2  ||  y >= Size/2) {
-                           hapt();
+                           feedback();
                            ContentResolver cr = Ime.getContentResolver();
                            if (ActTime > 0) {
                               ActTime = -1;
@@ -318,13 +320,13 @@ public class StenoView extends View implements RecognitionListener {
                      if (Rpt > 0)
                         Rpt = 0;
                      if (Rpt == 0  &&  mv >= Size / 2) {
-                        hapt();
+                        feedback();
                         Dir = dir(px, py);
                      }
                   }
                }
                else if (dist(x-PX, y-PY) >= Math.max(Size, dist(x, y)) / 3  &&  (d = dir(x-PX, y-PY)) != Dir) {
-                  hapt();
+                  feedback();
                   stroke(Strokes[Dir << 3 | d - 1] - 1);
                   Beg = false;
                   Dir = 0;
@@ -367,7 +369,7 @@ public class StenoView extends View implements RecognitionListener {
             if (Dir != 0)
                stroke(Strokes[Dir-1] - 1);
             else if (dist(PX, PY) <= Size/20  &&  (BegX -= OrgX) >= 0  &&  BegX < Size * 3  &&  (BegY -= OrgY) >= 0  &&  BegY < Size * 3) {
-               hapt();
+               feedback();
                if ((ev.getEventTime() - TapTime) > TAP  ||  dist(TapX-BegX, TapY-BegY) > Size/3)
                   tap(BegX, BegY);
                else
@@ -776,6 +778,15 @@ public class StenoView extends View implements RecognitionListener {
             if (cm != null  &&  cm.hasPrimaryClip())
                Paste.push(cm.getPrimaryClip().getItemAt(0).coerceToText(getContext()).toString());
             break;
+         case 0x10000F:  // QUIET
+            if (Tone == null)
+               (Tone = new ToneGenerator(AudioManager.STREAM_MUSIC, 100)).startTone(ToneGenerator.TONE_PROP_ACK, 10);  // 12 / 1200 Hz
+            else {
+               dly();
+               Tone.release();
+               Tone = null;
+            }
+            break;
          case 0x100010:  // DOC
             if (Help == null) {
                Help = new Paint();
@@ -969,6 +980,8 @@ public class StenoView extends View implements RecognitionListener {
             s = "WIPE";
          else if (Vis == 0x10000E)
             s = "PUSH";
+         else if (Vis == 0x10000F)
+            s = Tone == null? "QUIET" : "quiet";
          else if (Vis == 0x100011)
             s = "UPC";
          else
@@ -987,8 +1000,10 @@ public class StenoView extends View implements RecognitionListener {
       }
    }
 
-   void hapt() {
+   void feedback() {
       performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);
+      if (Tone != null)
+         Tone.startTone(ToneGenerator.TONE_PROP_ACK, 10);  // 12 / 1200 Hz
    }
 
    static void dly() {

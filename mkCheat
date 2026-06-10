@@ -1,5 +1,5 @@
 #!/usr/bin/pil
-# 22apr26 Software Lab. Alexander Burger
+# 10jun26 Software Lab. Alexander Burger
 
 (load "@lib/http.l" "@lib/xhtml.l" "@lib/svg.l")
 (load "svg.l")
@@ -28,15 +28,15 @@
          "3" "ESC" "321"
          "BS" "1" "TAB"
          "2" "RET" "21" )
-      (window 30 160 1 1
+      (window 10 160 1 1
          (bold
-            (for (H . C) '("S" "P" "D" "A")
+            (for (H . C) '("S" "P" "D" "A" "F")
                (window (+ 40 (* H 40)) -20 40 24
                   (ps 0 C) )
-               (window (+ `(+ 40 270) (* H 40)) -20 40 24
+               (window (+ `(+ 40 280) (* H 40)) -20 40 24
                   (ps 0 C) ) ) )
-         (hline -2 `(+ 40 (* 5 40)) 40)
-         (hline -2 `(+ 40 270 (* 5 40)) `(+ 40 270))
+         (hline -2 `(+ 40 (* 6 40)) 40)
+         (hline -2 `(+ 40 280 (* 6 40)) `(+ 40 280))
          (let Lst
             (quote
                (stenoSP "SP" "SP" "SP" "AUTO" "SP" "RIGHT")
@@ -56,7 +56,7 @@
                (stenoN "n" "N" "" "TOP-L" "ñ" "HOME")
                (stenoO "o" "O" "|" "0" "ö" "F10")
                (stenoP "p" "P" "%" "PUSH" "§" "")
-               (stenoQ "q" "Q" "'" "" "" "BREAK")
+               (stenoQ "q" "Q" "'" "QUIET" "" "BREAK")
                (stenoR "r" "R" "" "BOT-R" "♥" "PGDOWN")
                (stenoS "s" "S" "$" "BOT-L" "ß" "END")
                (stenoT "t" "T" "~" "QUIT" "👍" "DOWN")
@@ -73,21 +73,21 @@
                (stenoClose ")" "}" "]" "UPC" "👈" "") )
             (for H 2
                (for V 16
-                  (let X (* (dec H) 270)
+                  (let X (* (dec H) 280)
                      (let (Y (* (dec V) 30)  L (++ Lst))
                         (let STROKE "#F00"
                            ((++ L) (+ 10 X) Y 1) )
-                        (do 5
+                        (do 6
                            (window (inc 'X 40) (+ 3 Y) 40 24
                               (ps 0 (++ L)) ) ) ) ) ) ) ) )
-      (window 30 690 1 1
+      (window 10 690 1 1
          (bold
             (window (+ 40 40) -20 40 24
                (ps 0 "F") )
-            (window `(+ 40 270 40) -20 40 24
+            (window `(+ 40 280 40) -20 40 24
                (ps 0 "F") ) )
          (hline -2 `(+ 40 (* 2 40)) 40)
-         (hline -2 `(+ 40 270 (* 2 40)) `(+ 40 270))
+         (hline -2 `(+ 40 280 (* 2 40)) `(+ 40 280))
          (let Lst
             (quote
                (steno1 "1" "F1")
@@ -102,7 +102,7 @@
                (steno0 "10" "F10") )
             (for H 2
                (for V 5
-                  (let X (* (dec H) 270)
+                  (let X (* (dec H) 280)
                      (let (Y (* (dec V) 30)  L (++ Lst))
                         (let STROKE "#F00"
                            ((++ L) (+ 10 X) Y 1) )

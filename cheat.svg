@@ -77,33 +77,39 @@
 <text x="15" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">21</text>
 </g>
 </g>
-<g transform="translate(30,160)">
+<g transform="translate(10,160)">
 <g transform="translate(80,-20)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="bold">S</text>
 </g>
-<g transform="translate(350,-20)">
+<g transform="translate(360,-20)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="bold">S</text>
 </g>
 <g transform="translate(120,-20)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="bold">P</text>
 </g>
-<g transform="translate(390,-20)">
+<g transform="translate(400,-20)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="bold">P</text>
 </g>
 <g transform="translate(160,-20)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="bold">D</text>
 </g>
-<g transform="translate(430,-20)">
+<g transform="translate(440,-20)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="bold">D</text>
 </g>
 <g transform="translate(200,-20)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="bold">A</text>
 </g>
-<g transform="translate(470,-20)">
+<g transform="translate(480,-20)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="bold">A</text>
 </g>
-<polyline fill="none" stroke="black" stroke-width="1" points="240 -2 40 -2"/>
-<polyline fill="none" stroke="black" stroke-width="1" points="510 -2 310 -2"/>
+<g transform="translate(240,-20)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="bold">F</text>
+</g>
+<g transform="translate(520,-20)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="bold">F</text>
+</g>
+<polyline fill="none" stroke="black" stroke-width="1" points="280 -2 40 -2"/>
+<polyline fill="none" stroke="black" stroke-width="1" points="560 -2 320 -2"/>
 <g transform="translate(10,0)">
 <g transform="scale(1,1)">
 <rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
@@ -134,6 +140,9 @@
 </g>
 <g transform="translate(200,3)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">SP</text>
+</g>
+<g transform="translate(240,3)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">RIGHT</text>
 </g>
 <g transform="translate(10,30)">
 <g transform="scale(1,1)">
@@ -166,6 +175,9 @@
 <g transform="translate(200,33)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">ä</text>
 </g>
+<g transform="translate(240,33)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">PGUP</text>
+</g>
 <g transform="translate(10,60)">
 <g transform="scale(1,1)">
 <rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
@@ -197,6 +209,9 @@
 <g transform="translate(200,63)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">😰</text>
 </g>
+<g transform="translate(240,63)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">F7</text>
+</g>
 <g transform="translate(10,90)">
 <g transform="scale(1,1)">
 <rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
@@ -227,6 +242,9 @@
 </g>
 <g transform="translate(200,93)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">😎</text>
+</g>
+<g transform="translate(240,93)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">F6</text>
 </g>
 <g transform="translate(10,120)">
 <g transform="scale(1,1)">
@@ -261,6 +279,9 @@
 <g transform="translate(200,123)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">Δ</text>
 </g>
+<g transform="translate(240,123)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">DEL</text>
+</g>
 <g transform="translate(10,150)">
 <g transform="scale(1,1)">
 <rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
@@ -291,6 +312,9 @@
 </g>
 <g transform="translate(200,153)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">€</text>
+</g>
+<g transform="translate(240,153)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">LEFT</text>
 </g>
 <g transform="translate(10,180)">
 <g transform="scale(1,1)">
@@ -325,6 +349,9 @@
 <g transform="translate(200,183)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
 </g>
+<g transform="translate(240,183)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">F8</text>
+</g>
 <g transform="translate(10,210)">
 <g transform="scale(1,1)">
 <rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
@@ -355,6 +382,9 @@
 </g>
 <g transform="translate(200,213)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">º</text>
+</g>
+<g transform="translate(240,213)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
 </g>
 <g transform="translate(10,240)">
 <g transform="scale(1,1)">
@@ -387,6 +417,9 @@
 <g transform="translate(200,243)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">—</text>
 </g>
+<g transform="translate(240,243)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
+</g>
 <g transform="translate(10,270)">
 <g transform="scale(1,1)">
 <rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
@@ -417,6 +450,9 @@
 </g>
 <g transform="translate(200,273)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
+</g>
+<g transform="translate(240,273)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">UP</text>
 </g>
 <g transform="translate(10,300)">
 <g transform="scale(1,1)">
@@ -449,6 +485,9 @@
 <g transform="translate(200,303)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
 </g>
+<g transform="translate(240,303)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">F7</text>
+</g>
 <g transform="translate(10,330)">
 <g transform="scale(1,1)">
 <rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
@@ -480,6 +519,9 @@
 <g transform="translate(200,333)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">²</text>
 </g>
+<g transform="translate(240,333)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">F2</text>
+</g>
 <g transform="translate(10,360)">
 <g transform="scale(1,1)">
 <rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
@@ -510,6 +552,9 @@
 </g>
 <g transform="translate(200,363)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">☺</text>
+</g>
+<g transform="translate(240,363)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">F4</text>
 </g>
 <g transform="translate(10,390)">
 <g transform="scale(1,1)">
@@ -544,6 +589,9 @@
 <g transform="translate(200,393)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
 </g>
+<g transform="translate(240,393)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
+</g>
 <g transform="translate(10,420)">
 <g transform="scale(1,1)">
 <rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
@@ -574,6 +622,9 @@
 </g>
 <g transform="translate(200,423)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">ñ</text>
+</g>
+<g transform="translate(240,423)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">HOME</text>
 </g>
 <g transform="translate(10,450)">
 <g transform="scale(1,1)">
@@ -606,7 +657,10 @@
 <g transform="translate(200,453)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">ö</text>
 </g>
-<g transform="translate(280,0)">
+<g transform="translate(240,453)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">F10</text>
+</g>
+<g transform="translate(290,0)">
 <g transform="scale(1,1)">
 <rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
 <g transform="translate(11,0)">
@@ -622,22 +676,25 @@
 </g>
 </g>
 </g>
-<g transform="translate(310,3)">
+<g transform="translate(320,3)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">p</text>
 </g>
-<g transform="translate(350,3)">
+<g transform="translate(360,3)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">P</text>
 </g>
-<g transform="translate(390,3)">
+<g transform="translate(400,3)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">%</text>
 </g>
-<g transform="translate(430,3)">
+<g transform="translate(440,3)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">PUSH</text>
 </g>
-<g transform="translate(470,3)">
+<g transform="translate(480,3)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">§</text>
 </g>
-<g transform="translate(280,30)">
+<g transform="translate(520,3)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
+</g>
+<g transform="translate(290,30)">
 <g transform="scale(1,1)">
 <rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
 <g transform="translate(11,0)">
@@ -653,22 +710,25 @@
 </g>
 </g>
 </g>
-<g transform="translate(310,33)">
+<g transform="translate(320,33)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">q</text>
 </g>
-<g transform="translate(350,33)">
+<g transform="translate(360,33)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">Q</text>
 </g>
-<g transform="translate(390,33)">
+<g transform="translate(400,33)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">'</text>
 </g>
-<g transform="translate(430,33)">
+<g transform="translate(440,33)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">QUIET</text>
+</g>
+<g transform="translate(480,33)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
 </g>
-<g transform="translate(470,33)">
-<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
+<g transform="translate(520,33)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">BREAK</text>
 </g>
-<g transform="translate(280,60)">
+<g transform="translate(290,60)">
 <g transform="scale(1,1)">
 <rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
 <g transform="translate(11,0)">
@@ -684,22 +744,25 @@
 </g>
 </g>
 </g>
-<g transform="translate(310,63)">
+<g transform="translate(320,63)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">r</text>
 </g>
-<g transform="translate(350,63)">
+<g transform="translate(360,63)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">R</text>
 </g>
-<g transform="translate(390,63)">
+<g transform="translate(400,63)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
 </g>
-<g transform="translate(430,63)">
+<g transform="translate(440,63)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">BOT-R</text>
 </g>
-<g transform="translate(470,63)">
+<g transform="translate(480,63)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">♥</text>
 </g>
-<g transform="translate(280,90)">
+<g transform="translate(520,63)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">PGDOWN</text>
+</g>
+<g transform="translate(290,90)">
 <g transform="scale(1,1)">
 <rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
 <g transform="translate(11,0)">
@@ -715,22 +778,25 @@
 </g>
 </g>
 </g>
-<g transform="translate(310,93)">
+<g transform="translate(320,93)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">s</text>
 </g>
-<g transform="translate(350,93)">
+<g transform="translate(360,93)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">S</text>
 </g>
-<g transform="translate(390,93)">
+<g transform="translate(400,93)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">$</text>
 </g>
-<g transform="translate(430,93)">
+<g transform="translate(440,93)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">BOT-L</text>
 </g>
-<g transform="translate(470,93)">
+<g transform="translate(480,93)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">ß</text>
 </g>
-<g transform="translate(280,120)">
+<g transform="translate(520,93)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">END</text>
+</g>
+<g transform="translate(290,120)">
 <g transform="scale(1,1)">
 <rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
 <g transform="translate(11,0)">
@@ -746,22 +812,25 @@
 </g>
 </g>
 </g>
-<g transform="translate(310,123)">
+<g transform="translate(320,123)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">t</text>
 </g>
-<g transform="translate(350,123)">
+<g transform="translate(360,123)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">T</text>
 </g>
-<g transform="translate(390,123)">
+<g transform="translate(400,123)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">~</text>
 </g>
-<g transform="translate(430,123)">
+<g transform="translate(440,123)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">QUIT</text>
 </g>
-<g transform="translate(470,123)">
+<g transform="translate(480,123)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">👍</text>
 </g>
-<g transform="translate(280,150)">
+<g transform="translate(520,123)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">DOWN</text>
+</g>
+<g transform="translate(290,150)">
 <g transform="scale(1,1)">
 <rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
 <g transform="translate(11,0)">
@@ -779,22 +848,25 @@
 </g>
 </g>
 </g>
-<g transform="translate(310,153)">
+<g transform="translate(320,153)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">u</text>
 </g>
-<g transform="translate(350,153)">
+<g transform="translate(360,153)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">U</text>
 </g>
-<g transform="translate(390,153)">
+<g transform="translate(400,153)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">_</text>
 </g>
-<g transform="translate(430,153)">
+<g transform="translate(440,153)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">1</text>
 </g>
-<g transform="translate(470,153)">
+<g transform="translate(480,153)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">ü</text>
 </g>
-<g transform="translate(280,180)">
+<g transform="translate(520,153)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">F1</text>
+</g>
+<g transform="translate(290,180)">
 <g transform="scale(1,1)">
 <rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
 <g transform="translate(11,0)">
@@ -810,22 +882,25 @@
 </g>
 </g>
 </g>
-<g transform="translate(310,183)">
+<g transform="translate(320,183)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">v</text>
 </g>
-<g transform="translate(350,183)">
+<g transform="translate(360,183)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">V</text>
 </g>
-<g transform="translate(390,183)">
+<g transform="translate(400,183)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
 </g>
-<g transform="translate(430,183)">
+<g transform="translate(440,183)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">VERS</text>
 </g>
-<g transform="translate(470,183)">
+<g transform="translate(480,183)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
 </g>
-<g transform="translate(280,210)">
+<g transform="translate(520,183)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">F11</text>
+</g>
+<g transform="translate(290,210)">
 <g transform="scale(1,1)">
 <rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
 <g transform="translate(11,0)">
@@ -843,22 +918,25 @@
 </g>
 </g>
 </g>
-<g transform="translate(310,213)">
+<g transform="translate(320,213)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">w</text>
 </g>
-<g transform="translate(350,213)">
+<g transform="translate(360,213)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">W</text>
 </g>
-<g transform="translate(390,213)">
+<g transform="translate(400,213)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
 </g>
-<g transform="translate(430,213)">
+<g transform="translate(440,213)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">WIPE</text>
 </g>
-<g transform="translate(470,213)">
+<g transform="translate(480,213)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
 </g>
-<g transform="translate(280,240)">
+<g transform="translate(520,213)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">F12</text>
+</g>
+<g transform="translate(290,240)">
 <g transform="scale(1,1)">
 <rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
 <g transform="translate(11,0)">
@@ -874,22 +952,25 @@
 </g>
 </g>
 </g>
-<g transform="translate(310,243)">
+<g transform="translate(320,243)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">x</text>
 </g>
-<g transform="translate(350,243)">
+<g transform="translate(360,243)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">X</text>
 </g>
-<g transform="translate(390,243)">
+<g transform="translate(400,243)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
 </g>
-<g transform="translate(430,243)">
+<g transform="translate(440,243)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
 </g>
-<g transform="translate(470,243)">
+<g transform="translate(480,243)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
 </g>
-<g transform="translate(280,270)">
+<g transform="translate(520,243)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
+</g>
+<g transform="translate(290,270)">
 <g transform="scale(1,1)">
 <rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
 <g transform="translate(11,0)">
@@ -905,22 +986,25 @@
 </g>
 </g>
 </g>
-<g transform="translate(310,273)">
+<g transform="translate(320,273)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">y</text>
 </g>
-<g transform="translate(350,273)">
+<g transform="translate(360,273)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">Y</text>
 </g>
-<g transform="translate(390,273)">
+<g transform="translate(400,273)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
 </g>
-<g transform="translate(430,273)">
+<g transform="translate(440,273)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">*</text>
 </g>
-<g transform="translate(470,273)">
+<g transform="translate(480,273)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
 </g>
-<g transform="translate(280,300)">
+<g transform="translate(520,273)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
+</g>
+<g transform="translate(290,300)">
 <g transform="scale(1,1)">
 <rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
 <g transform="translate(11,0)">
@@ -938,22 +1022,25 @@
 </g>
 </g>
 </g>
-<g transform="translate(310,303)">
+<g transform="translate(320,303)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">z</text>
 </g>
-<g transform="translate(350,303)">
+<g transform="translate(360,303)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">Z</text>
 </g>
-<g transform="translate(390,303)">
+<g transform="translate(400,303)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
 </g>
-<g transform="translate(430,303)">
+<g transform="translate(440,303)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">3</text>
 </g>
-<g transform="translate(470,303)">
+<g transform="translate(480,303)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">³</text>
 </g>
-<g transform="translate(280,330)">
+<g transform="translate(520,303)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">F3</text>
+</g>
+<g transform="translate(290,330)">
 <g transform="scale(1,1)">
 <rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
 <g transform="translate(11,0)">
@@ -969,22 +1056,25 @@
 </g>
 </g>
 </g>
-<g transform="translate(310,333)">
+<g transform="translate(320,333)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">,</text>
 </g>
-<g transform="translate(350,333)">
+<g transform="translate(360,333)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">,</text>
 </g>
-<g transform="translate(390,333)">
+<g transform="translate(400,333)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">;</text>
 </g>
-<g transform="translate(430,333)">
+<g transform="translate(440,333)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">/</text>
 </g>
-<g transform="translate(470,333)">
+<g transform="translate(480,333)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
 </g>
-<g transform="translate(280,360)">
+<g transform="translate(520,333)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">INS</text>
+</g>
+<g transform="translate(290,360)">
 <g transform="scale(1,1)">
 <rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
 <g transform="translate(11,0)">
@@ -1000,22 +1090,25 @@
 </g>
 </g>
 </g>
-<g transform="translate(310,363)">
+<g transform="translate(320,363)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">.</text>
 </g>
-<g transform="translate(350,363)">
+<g transform="translate(360,363)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">.</text>
 </g>
-<g transform="translate(390,363)">
+<g transform="translate(400,363)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">:</text>
 </g>
-<g transform="translate(430,363)">
+<g transform="translate(440,363)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">.</text>
 </g>
-<g transform="translate(470,363)">
+<g transform="translate(480,363)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
 </g>
-<g transform="translate(280,390)">
+<g transform="translate(520,363)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
+</g>
+<g transform="translate(290,390)">
 <g transform="scale(1,1)">
 <rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
 <g transform="translate(11,0)">
@@ -1031,22 +1124,25 @@
 </g>
 </g>
 </g>
-<g transform="translate(310,393)">
+<g transform="translate(320,393)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">?</text>
 </g>
-<g transform="translate(350,393)">
+<g transform="translate(360,393)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">?</text>
 </g>
-<g transform="translate(390,393)">
+<g transform="translate(400,393)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">!</text>
 </g>
-<g transform="translate(430,393)">
+<g transform="translate(440,393)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">+</text>
 </g>
-<g transform="translate(470,393)">
+<g transform="translate(480,393)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">±</text>
 </g>
-<g transform="translate(280,420)">
+<g transform="translate(520,393)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
+</g>
+<g transform="translate(290,420)">
 <g transform="scale(1,1)">
 <rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
 <g transform="translate(11,0)">
@@ -1064,22 +1160,25 @@
 </g>
 </g>
 </g>
-<g transform="translate(310,423)">
+<g transform="translate(320,423)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">(</text>
 </g>
-<g transform="translate(350,423)">
+<g transform="translate(360,423)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">{</text>
 </g>
-<g transform="translate(390,423)">
+<g transform="translate(400,423)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">[</text>
 </g>
-<g transform="translate(430,423)">
+<g transform="translate(440,423)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">5</text>
 </g>
-<g transform="translate(470,423)">
+<g transform="translate(480,423)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">👉</text>
 </g>
-<g transform="translate(280,450)">
+<g transform="translate(520,423)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">F5</text>
+</g>
+<g transform="translate(290,450)">
 <g transform="scale(1,1)">
 <rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
 <g transform="translate(11,0)">
@@ -1097,31 +1196,34 @@
 </g>
 </g>
 </g>
-<g transform="translate(310,453)">
+<g transform="translate(320,453)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">)</text>
 </g>
-<g transform="translate(350,453)">
+<g transform="translate(360,453)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">}</text>
 </g>
-<g transform="translate(390,453)">
+<g transform="translate(400,453)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">]</text>
 </g>
-<g transform="translate(430,453)">
+<g transform="translate(440,453)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">UPC</text>
 </g>
-<g transform="translate(470,453)">
+<g transform="translate(480,453)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">👈</text>
 </g>
+<g transform="translate(520,453)">
+<text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal"></text>
 </g>
-<g transform="translate(30,690)">
+</g>
+<g transform="translate(10,690)">
 <g transform="translate(80,-20)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="bold">F</text>
 </g>
-<g transform="translate(350,-20)">
+<g transform="translate(360,-20)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="bold">F</text>
 </g>
 <polyline fill="none" stroke="black" stroke-width="1" points="120 -2 40 -2"/>
-<polyline fill="none" stroke="black" stroke-width="1" points="390 -2 310 -2"/>
+<polyline fill="none" stroke="black" stroke-width="1" points="400 -2 320 -2"/>
 <g transform="translate(10,0)">
 <g transform="scale(1,1)">
 <rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
@@ -1238,7 +1340,7 @@
 <g transform="translate(80,123)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">F5</text>
 </g>
-<g transform="translate(280,0)">
+<g transform="translate(290,0)">
 <g transform="scale(1,1)">
 <rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
 <g transform="translate(11,0)">
@@ -1254,13 +1356,13 @@
 </g>
 </g>
 </g>
-<g transform="translate(310,3)">
+<g transform="translate(320,3)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">6</text>
 </g>
-<g transform="translate(350,3)">
+<g transform="translate(360,3)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">F6</text>
 </g>
-<g transform="translate(280,30)">
+<g transform="translate(290,30)">
 <g transform="scale(1,1)">
 <rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
 <g transform="translate(11,0)">
@@ -1276,13 +1378,13 @@
 </g>
 </g>
 </g>
-<g transform="translate(310,33)">
+<g transform="translate(320,33)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">7</text>
 </g>
-<g transform="translate(350,33)">
+<g transform="translate(360,33)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">F7</text>
 </g>
-<g transform="translate(280,60)">
+<g transform="translate(290,60)">
 <g transform="scale(1,1)">
 <rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
 <g transform="translate(11,0)">
@@ -1300,13 +1402,13 @@
 </g>
 </g>
 </g>
-<g transform="translate(310,63)">
+<g transform="translate(320,63)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">8</text>
 </g>
-<g transform="translate(350,63)">
+<g transform="translate(360,63)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">F8</text>
 </g>
-<g transform="translate(280,90)">
+<g transform="translate(290,90)">
 <g transform="scale(1,1)">
 <rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
 <g transform="translate(11,0)">
@@ -1322,13 +1424,13 @@
 </g>
 </g>
 </g>
-<g transform="translate(310,93)">
+<g transform="translate(320,93)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">9</text>
 </g>
-<g transform="translate(350,93)">
+<g transform="translate(360,93)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">F9</text>
 </g>
-<g transform="translate(280,120)">
+<g transform="translate(290,120)">
 <g transform="scale(1,1)">
 <rect x="0" y="0" width="22" height="22" fill="none" stroke="black" stroke-width="1"/>
 <g transform="translate(11,0)">
@@ -1344,10 +1446,10 @@
 </g>
 </g>
 </g>
-<g transform="translate(310,123)">
+<g transform="translate(320,123)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">10</text>
 </g>
-<g transform="translate(350,123)">
+<g transform="translate(360,123)">
 <text x="20" y="12" text-anchor="middle" font-size="12" font-family="serif" font-style="normal" font-weight="normal">F10</text>
 </g>
 </g>

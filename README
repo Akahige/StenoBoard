@@ -1,5 +1,5 @@
 # VIP (=: flat T)
-# 04may26 Software Lab. Alexander Burger
+# 10jun26 Software Lab. Alexander Burger
 
       StenoBoard
       ==========
@@ -84,7 +84,7 @@ keys. Pressing a little longer will start an auto-repeat.
 
 Otherwise, after moving that minimal distance, it is considered as the
 beginning of a stroke. To indicate that to the user, a short vibration
-gives haptic feedback.
+gives haptic (and optionally acoustic) feedback.
 
 If now the finger is lifted up, the key is immediately generated. If the
 movement deviates from the original direction more than a certain
@@ -286,6 +286,9 @@ the Digit field:
   keys (PASTE).
 
 * "P" (PUSH) pushes the system clipboard to the PASTE queue.
+
+* "Q" (QUIET) toggles acoustic feedback (in addition to the haptic
+  feedback) on/off. Initially it is on.
 
 * "M" (MIC) allows voice input via Google Speech Recognition, until the
   finger is lifted up. Requires the "Microphone" permission in the App
