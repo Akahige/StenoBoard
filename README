@@ -1,5 +1,5 @@
 # VIP (=: flat T)
-# 10jun26 Software Lab. Alexander Burger
+# 22jun26 Software Lab. Alexander Burger
 
       StenoBoard
       ==========
@@ -190,10 +190,17 @@ AltGr field. Typical ones are:
    ü  A-U
    Ü  SA-U
    ß  A-S
+   ñ  A-N
+   Ñ  SA-N
+   Δ  A-D
    €  A-E Euro
+   º  A-G De[g]ree
    §  A-P Paragraph
    ²  A-2
    ³  A-3
+   —  A-- Long hyphen
+   ±  A-?
+   ·  A-. Middle-dot
    😰 A-B [B]ad
    😎 A-C [C]ool
    ☺  A-L [L]augh

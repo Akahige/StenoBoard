@@ -1,5 +1,5 @@
 #!/usr/bin/pil
-# 10jun26 Software Lab. Alexander Burger
+# 24jun26 Software Lab. Alexander Burger
 
 (load "@lib/http.l" "@lib/xhtml.l" "@lib/svg.l")
 (load "svg.l")
@@ -67,7 +67,7 @@
                (stenoY "y" "Y" "" "*" "" "")
                (stenoZ "z" "Z" "" "3" "³" "F3")
                (stenoComma "," "," ";" "/" "" "INS")
-               (stenoDot "." "." ":" "." "" "")
+               (stenoDot "." "." ":" "." "·" "")
                (stenoQuest "?" "?" "!" "+" "±" "")
                (stenoOpen "(" "{" "[" "5" "👉" "F5")
                (stenoClose ")" "}" "]" "UPC" "👈" "") )

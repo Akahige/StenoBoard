@@ -1,3 +1,11 @@
+26.6.26
+   Middle-dot character "·", input as A-.
+      src/de/software_lab/stenoboard/StenoView.java
+      mkCheat
+      cheat.svg
+      cheat.pdf
+      README
+
 26.6.10
    Optionally switch off QUIET mode
       src/de/software_lab/stenoboard/StenoView.java
