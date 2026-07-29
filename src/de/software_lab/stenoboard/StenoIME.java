@@ -1,4 +1,4 @@
-// 16apr26abu
+// 27jul26abu
 // (c) Software Lab. Alexander Burger
 
 package de.software_lab.stenoboard;
@@ -29,6 +29,20 @@ public class StenoIME extends InputMethodService implements SensorEventListener 
    @Override public void onInitializeInterface() {
       super.onInitializeInterface();
       setCandidatesViewShown(true);
+   }
+
+   @Override public void onStartInput(EditorInfo attribute, boolean restarting) {
+      super.onStartInput(attribute, restarting);
+      setCandidatesViewShown(true);
+   }
+
+   @Override public void onFinishInput() {
+      super.onFinishInput();
+      setCandidatesViewShown(false);
+   }
+
+   @Override public boolean onEvaluateFullscreenMode() {
+      return false;
    }
 
    public void onAccuracyChanged(Sensor sensor, int accuracy) {}

@@ -1,3 +1,19 @@
+26.7.27
+   Target SDK 36 (Android 16)
+      mk.stenoBoard
+   Return false from onEvaluateFullscreenMode()
+      src/de/software_lab/stenoboard/StenoIME.java
+
+26.7.17
+   AutoComplete-indicator permanent
+      src/de/software_lab/stenoboard/StenoView.java
+
+26.7.16
+   Use SoundPool instead of ToneGenerator
+      src/de/software_lab/stenoboard/StenoView.java
+      res/raw/click.flac
+      README
+
 26.6.26
    Middle-dot character "·", input as A-.
       src/de/software_lab/stenoboard/StenoView.java

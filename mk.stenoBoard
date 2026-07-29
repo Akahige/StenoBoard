@@ -1,12 +1,12 @@
-# 22jun26 Software Lab. Alexander Burger
+# 27jul26 Software Lab. Alexander Burger
 
 ## openjdk-21-jdk-headless
 
-VERS=36
-NAME=26.6.26
+VERS=39
+NAME=26.7.27
 
 MINSDK=24
-TARGET=35
+TARGET=36
 BUNDLE=../bundle-tools
 TOOL=bundletool-all-1.18.3.jar
 PLATFORM=../platforms/android-35

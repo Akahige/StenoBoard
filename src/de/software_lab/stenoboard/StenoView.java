@@ -1,4 +1,4 @@
-// 22jun26 Software Lab. Alexander Burger
+// 17jul26 Software Lab. Alexander Burger
 
 package de.software_lab.stenoboard;
 
@@ -19,7 +19,8 @@ import android.content.ClipboardManager;
 import android.content.ClipDescription;
 import android.content.ClipData;
 import android.media.AudioManager;
-import android.media.ToneGenerator;
+import android.media.AudioAttributes;
+import android.media.SoundPool;
 import android.provider.Settings;
 import android.speech.SpeechRecognizer;
 import android.speech.RecognitionListener;
@@ -32,14 +33,14 @@ public class StenoView extends View implements RecognitionListener {
    float Max, Width, Height, Size, OrgX, OrgY, PadX, PadY;
    int Pos, Dir, Rpt, RptN;
    boolean Off, Beg, Shift, Punct, Digit, Cntrl, AltGr, Funct, Upc;
-   int Num, Repeat, Repeat2, Repeat3, Vis, Wipe, Auto;
+   int Num, Repeat, Repeat2, Repeat3, Vis, Wipe, Auto, Clk;
    long ActTime, TapTime;
    float BegX, BegY, PX, PY, MX, MY, TapX, TapY;
    final Paint Text1 = new Paint();
    final Paint Text2 = new Paint();
    final Paint[] Lines = new Paint[5];
    final int[] Colors = new int[]{Color.WHITE, Color.BLACK, Color.RED, Color.GREEN, Color.BLUE};
-   ToneGenerator Tone;
+   SoundPool Click;
    String Dict[];
    File DictFile;
    String AutoComplete;
@@ -779,12 +780,21 @@ public class StenoView extends View implements RecognitionListener {
                Paste.push(cm.getPrimaryClip().getItemAt(0).coerceToText(getContext()).toString());
             break;
          case 0x10000F:  // QUIET
-            if (Tone == null)
-               (Tone = new ToneGenerator(AudioManager.STREAM_MUSIC, 100)).startTone(ToneGenerator.TONE_PROP_ACK, 10);  // 12 / 1200 Hz
+            if (Click == null) {
+               AudioAttributes attrs = new AudioAttributes.Builder()
+                  .setUsage(AudioAttributes.USAGE_ASSISTANCE_SONIFICATION)
+                  .setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION)
+                  .build();
+               Click = new SoundPool.Builder()
+                  .setMaxStreams(1)
+                  .setAudioAttributes(attrs)
+                  .build();
+               Clk = Click.load(getContext(), R.raw.click, 1);
+            }
             else {
                dly();
-               Tone.release();
-               Tone = null;
+               Click.release();
+               Click = null;
             }
             break;
          case 0x100010:  // DOC
@@ -981,7 +991,7 @@ public class StenoView extends View implements RecognitionListener {
          else if (Vis == 0x10000E)
             s = "PUSH";
          else if (Vis == 0x10000F)
-            s = Tone == null? "QUIET" : "quiet";
+            s = Click == null? "QUIET" : "quiet";
          else if (Vis == 0x100011)
             s = "UPC";
          else
@@ -992,18 +1002,18 @@ public class StenoView extends View implements RecognitionListener {
             Text1.setStrokeWidth(Size / 4 / 8);
             canvas.drawText(s, OrgX + Size * 3/2, OrgY + Size / 3, Text1);
             canvas.drawText(s, OrgX + Size * 3/2, OrgY + Size / 3, Text2);
-            if (AutoComplete != null) {
-               canvas.drawText("·", OrgX + Size * 3/2, OrgY + Size * 2/3, Text1);
-               canvas.drawText("·", OrgX + Size * 3/2, OrgY + Size * 2/3, Text2);
-            }
+         }
+         if (AutoComplete != null) {
+            canvas.drawText("·", OrgX + Size * 3/2, OrgY + Size * 2/3, Text1);
+            canvas.drawText("·", OrgX + Size * 3/2, OrgY + Size * 2/3, Text2);
          }
       }
    }
 
    void feedback() {
+      if (Click != null)
+         Click.play(Clk, 0.5f, 0.5f, 1, 0, 1f);
       performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);
-      if (Tone != null)
-         Tone.startTone(ToneGenerator.TONE_PROP_ACK, 10);  // 12 / 1200 Hz
    }
 
    static void dly() {
