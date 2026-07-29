@@ -1,5 +1,5 @@
 # VIP (=: flat T)
-# 16jul26 Software Lab. Alexander Burger
+# 29jul26 Software Lab. Alexander Burger
 
       StenoBoard
       ==========
@@ -131,10 +131,6 @@ Swiping vertically outside the fields and pad area adjusts the display
 brightness, and swiping horizontally adjusts the audio volume. To enable
 these two, the "Modify settings" permission must be granted to the
 StenoBoard App.
-
-The hardware volume keys (and the gyroscope sensor during long presses)
-generate special sequences, starting with a "Δ" character. They can be
-used for mouse emulation.
 
 "Normal" keys are written in the center field. They are the lower case
 letters a-z, space, plus the often used characters ",", ".", "?", "("
