@@ -1,4 +1,4 @@
-// 17jul26 Software Lab. Alexander Burger
+// 30jul26 Software Lab. Alexander Burger
 
 package de.software_lab.stenoboard;
 
@@ -33,7 +33,7 @@ public class StenoView extends View implements RecognitionListener {
    float Max, Width, Height, Size, OrgX, OrgY, PadX, PadY;
    int Pos, Dir, Rpt, RptN;
    boolean Off, Beg, Shift, Punct, Digit, Cntrl, AltGr, Funct, Upc;
-   int Num, Repeat, Repeat2, Repeat3, Vis, Wipe, Auto, Clk;
+   int Num, Repeat, Repeat2, Repeat3, Vis, Wipe, Auto, Auto1, Clk;
    long ActTime, TapTime;
    float BegX, BegY, PX, PY, MX, MY, TapX, TapY;
    final Paint Text1 = new Paint();
@@ -664,12 +664,19 @@ public class StenoView extends View implements RecognitionListener {
             key(-c);
          else if (c == -KeyEvent.KEYCODE_DEL) {
             wipe();
-            key(KeyEvent.KEYCODE_DEL);
-            dly();
-            if (AutoComplete.length() > 0) {
-               AutoComplete = AutoComplete.substring(0, AutoComplete.length() - 1);
-               setAuto();
+            for (;;) {
+               if (Auto == Auto1) {
+                  key(KeyEvent.KEYCODE_DEL);
+                  if (AutoComplete.length() > 0) {
+                     AutoComplete = AutoComplete.substring(0, AutoComplete.length() - 1);
+                     setAuto();
+                  }
+                  break;
+               }
+               if (Dict[--Auto].indexOf('\t') < 0)
+                  break;
             }
+            dly();
             dictText();
          }
          else if (c == -KeyEvent.KEYCODE_TAB) {
@@ -1024,7 +1031,7 @@ public class StenoView extends View implements RecognitionListener {
    void reset(String ac, boolean rst) {
       AutoComplete = ac;
       if (rst) {
-         Auto = -1;
+         Auto = Auto1 = -1;
          Wipe = 0;
       }
       Dir = Rpt = 0;
@@ -1104,7 +1111,7 @@ public class StenoView extends View implements RecognitionListener {
       int a = 0;
       int z = Dict.length - 1;
 
-      Auto = -1;
+      Auto = Auto1 = -1;
       if (AutoComplete.length() > 0)
          while (a <= z) {
             int i = (a + z) / 2;
@@ -1113,7 +1120,7 @@ public class StenoView extends View implements RecognitionListener {
                   --i;
                for (;;) {
                   if (Dict[i].indexOf('\t') < 0) {
-                     Auto = i;
+                     Auto = Auto1 = i;
                      return;
                   }
                   if (++i == Dict.length  ||  !Dict[i].startsWith(AutoComplete))

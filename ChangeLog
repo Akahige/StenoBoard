@@ -1,3 +1,8 @@
+26.7.30
+   BS goes to previous match in AutoComplete
+      src/de/software_lab/stenoboard/StenoView.java
+      README
+
 26.7.29
    Remove hardware volume keys and gyroscope sensor
       src/de/software_lab/stenoboard/StenoIME.java

@@ -1,5 +1,5 @@
 # VIP (=: flat T)
-# 29jul26 Software Lab. Alexander Burger
+# 30jul26 Software Lab. Alexander Burger
 
       StenoBoard
       ==========
@@ -267,42 +267,42 @@ terminal multiplexer:
 The following keys control StenoBoard itself, and are all generated in
 the Digit field:
 
-* Digit-space toggles AutoComplete on/off. When on, proposals are
-  expanded on each key, separated by a middle-dot "·". TAB cycles
-  through all matches, RET accepts a proposal, and ESC and the
-  punctuation characters "!", "\"", "'", "(", ")", "*", ",", "-", ".",
-  ":", ";" and "?" accept the text typed so far. In all cases, the
-  accepted word is added to the dictionary if it has more than 4
-  characters.
+-- Digit-space toggles AutoComplete on/off. When on, proposals are
+   expanded on each key, separated by a middle-dot "·". TAB cycles
+   through all matches, BS goes back to a previous match, RET accepts a
+   proposal, and ESC and the punctuation characters "!", "\"", "'", "(",
+   ")", "*", ",", "-", ".", ":", ";" and "?" accept the text typed so
+   far. In all cases, the accepted word is added to the dictionary if it
+   has more than 4 characters.
 
-* Plain strokes South East, South West, North West or North East move
-  the whole layout on the screen to the bottom right (BOT-R), bottom
-  left (BOT-L), top left (TOP-L) or top right (TOP-R), respectively.
+-- Plain strokes South East, South West, North West or North East move
+   the whole layout on the screen to the bottom right (BOT-R), bottom
+   left (BOT-L), top left (TOP-L) or top right (TOP-R), respectively.
 
-* A stroke down (South) hides StenoBoard (QUIT).
+-- A stroke down (South) hides StenoBoard (QUIT).
 
-* A stroke left (West) starts numeric input (NUM) as a decimal number,
-  allowing to generate any Unicode character.
+-- A stroke left (West) starts numeric input (NUM) as a decimal number,
+   allowing to generate any Unicode character.
 
-* A stroke up (North) pastes the system clipboard (or the last element
-  from the PASTE queue if not empty), by sending it as a sequence of
-  keys (PASTE).
+-- A stroke up (North) pastes the system clipboard (or the last element
+   from the PASTE queue if not empty), by sending it as a sequence of
+   keys (PASTE).
 
-* "P" (PUSH) pushes the system clipboard to the PASTE queue.
+-- "P" (PUSH) pushes the system clipboard to the PASTE queue.
 
-* "Q" (QUIET) toggles acoustic feedback (in addition to the haptic
-  feedback) on/off. Initially it is on.
+-- "Q" (QUIET) toggles acoustic feedback (in addition to the haptic
+   feedback) on/off. Initially it is on.
 
-* "M" (MIC) allows voice input via Google Speech Recognition, until the
-  finger is lifted up. Requires the "Microphone" permission in the App
-  Settings.
+-- "M" (MIC) allows voice input via Google Speech Recognition, until the
+   finger is lifted up. Requires the "Microphone" permission in the App
+   Settings.
 
-* "W" (WIPE) erases the text generated with the last input. Useful to
-  undo an unintentional paste, or a failed voice recognition.
+-- "W" (WIPE) erases the text generated with the last input. Useful to
+   undo an unintentional paste, or a failed voice recognition.
 
-* "V" (VERS) displays the current version.
+-- "V" (VERS) displays the current version.
 
-* Finally, "D" (DOC) pops up a help screen (see below).
+-- Finally, "D" (DOC) pops up a help screen (see below).
 
 
       Repeat Taps
