@@ -1,4 +1,4 @@
-// 30jul26 Software Lab. Alexander Burger
+// 03aug26 Software Lab. Alexander Burger
 
 package de.software_lab.stenoboard;
 
@@ -32,8 +32,8 @@ public class StenoView extends View implements RecognitionListener {
    SpeechRecognizer Mic;
    float Max, Width, Height, Size, OrgX, OrgY, PadX, PadY;
    int Pos, Dir, Rpt, RptN;
-   boolean Off, Beg, Shift, Punct, Digit, Cntrl, AltGr, Funct, Upc;
-   int Num, Repeat, Repeat2, Repeat3, Vis, Wipe, Auto, Auto1, Clk;
+   boolean Off, Beg, Shift, Punct, Digit, Cntrl, AltGr, Funct, Upc, Clk;
+   int Num, Repeat, Repeat2, Repeat3, Vis, Wipe, Auto, Auto1, ClkId;
    long ActTime, TapTime;
    float BegX, BegY, PX, PY, MX, MY, TapX, TapY;
    final Paint Text1 = new Paint();
@@ -158,6 +158,14 @@ public class StenoView extends View implements RecognitionListener {
       }
       Max = getResources().getDisplayMetrics().densityDpi * 0.5f;  // 0.5 inch
       DictFile = new File(context.getFilesDir().getPath() + "Dict");
+      Click = new SoundPool.Builder()
+         .setMaxStreams(1)
+         .setAudioAttributes(new AudioAttributes.Builder()
+            .setUsage(AudioAttributes.USAGE_ASSISTANCE_SONIFICATION)
+            .setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION)
+            .build() )
+         .build();
+      ClkId = Click.load(getContext(), R.raw.click, 1);
    }
 
    @Override public boolean onTouchEvent(MotionEvent ev) {
@@ -707,10 +715,12 @@ public class StenoView extends View implements RecognitionListener {
                putDictAuto();
                key(KeyEvent.KEYCODE_ENTER);
                dly();
+               reset("", true);
             }
-            else if (Auto >= 0)
-               text(dictKey(Auto).substring(AutoComplete.length()));
-            reset("", true);
+            else if (Auto >= 0) {
+               text(Dict[Auto].substring(AutoComplete.length()));
+               AutoComplete = Dict[Auto];
+            }
             dictText();
          }
          else if (c == -KeyEvent.KEYCODE_ESCAPE) {
@@ -787,22 +797,10 @@ public class StenoView extends View implements RecognitionListener {
                Paste.push(cm.getPrimaryClip().getItemAt(0).coerceToText(getContext()).toString());
             break;
          case 0x10000F:  // QUIET
-            if (Click == null) {
-               AudioAttributes attrs = new AudioAttributes.Builder()
-                  .setUsage(AudioAttributes.USAGE_ASSISTANCE_SONIFICATION)
-                  .setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION)
-                  .build();
-               Click = new SoundPool.Builder()
-                  .setMaxStreams(1)
-                  .setAudioAttributes(attrs)
-                  .build();
-               Clk = Click.load(getContext(), R.raw.click, 1);
-            }
-            else {
+            if (Clk = !Clk)
+               Click.play(ClkId, 0.5f, 0.5f, 1, 0, 1f);
+            else
                dly();
-               Click.release();
-               Click = null;
-            }
             break;
          case 0x100010:  // DOC
             if (Help == null) {
@@ -998,7 +996,7 @@ public class StenoView extends View implements RecognitionListener {
          else if (Vis == 0x10000E)
             s = "PUSH";
          else if (Vis == 0x10000F)
-            s = Click == null? "QUIET" : "quiet";
+            s = Clk? "quiet" : "QUIET";
          else if (Vis == 0x100011)
             s = "UPC";
          else
@@ -1018,8 +1016,8 @@ public class StenoView extends View implements RecognitionListener {
    }
 
    void feedback() {
-      if (Click != null)
-         Click.play(Clk, 0.5f, 0.5f, 1, 0, 1f);
+      if (Clk)
+         Click.play(ClkId, 0.5f, 0.5f, 1, 0, 1f);
       performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY);
    }
 
@@ -1134,12 +1132,6 @@ public class StenoView extends View implements RecognitionListener {
          }
    }
 
-   String dictKey(int i) {
-      int ix = Dict[i].indexOf('\t');
-
-      return ix < 0? Dict[i] : Dict[i].substring(0, ix);
-   }
-
    String dictVal(int i) {
       int ix = Dict[i].indexOf('\t');
 
@@ -1150,7 +1142,7 @@ public class StenoView extends View implements RecognitionListener {
       if (Auto < 0)
          text("·");
       else
-         text("·" + dictKey(Auto).substring(AutoComplete.length()));
+         text("·" + Dict[Auto].substring(AutoComplete.length()));
    }
 
    void key(int c) {

@@ -1,3 +1,7 @@
+26.8.3
+   Continue AutoComplete matching after RET
+      src/de/software_lab/stenoboard/StenoView.java
+
 26.7.30
    BS goes to previous match in AutoComplete
       src/de/software_lab/stenoboard/StenoView.java
