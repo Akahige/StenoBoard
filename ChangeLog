@@ -1,3 +1,7 @@
+26.8.6
+   Propagate TAB or RET in AutoComplete at end of line
+      src/de/software_lab/stenoboard/StenoView.java
+
 26.8.3
    Continue AutoComplete matching after RET
       src/de/software_lab/stenoboard/StenoView.java

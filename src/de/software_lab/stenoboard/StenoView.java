@@ -1,4 +1,4 @@
-// 03aug26 Software Lab. Alexander Burger
+// 06aug26 Software Lab. Alexander Burger
 
 package de.software_lab.stenoboard;
 
@@ -218,9 +218,7 @@ public class StenoView extends View implements RecognitionListener {
                         if (Rpt == r) {
                            Rpt = r = -r;
                            do {
-                              synchronized (Ime) {
-                                 tap(bx, by);
-                              }
+                              tap(bx, by);
                               sleep(DLY);
                            } while (Rpt == r);
                         }
@@ -690,7 +688,7 @@ public class StenoView extends View implements RecognitionListener {
          else if (c == -KeyEvent.KEYCODE_TAB) {
             wipe();
             dly();
-            if (AutoComplete.length() == 0  ||  Auto < 0) {
+            if (Auto < 0  ||  AutoComplete.equals(Dict[Auto])) {
                putDictAuto();
                key(KeyEvent.KEYCODE_TAB);
                dly();
@@ -711,7 +709,7 @@ public class StenoView extends View implements RecognitionListener {
          else if (c == -KeyEvent.KEYCODE_ENTER) {
             wipe();
             dly();
-            if (AutoComplete.length() == 0  ||  Auto < 0) {
+            if (Auto < 0  ||  AutoComplete.equals(Dict[Auto])) {
                putDictAuto();
                key(KeyEvent.KEYCODE_ENTER);
                dly();
@@ -760,7 +758,6 @@ public class StenoView extends View implements RecognitionListener {
          }
          else {
             wipe();
-            putDictAuto();
             reset(null, true);
          }
       }
@@ -1146,9 +1143,7 @@ public class StenoView extends View implements RecognitionListener {
    }
 
    void key(int c) {
-      synchronized (Ime) {
-         Ime.sendDownUpKeyEvents(c);
-      }
+      Ime.sendDownUpKeyEvents(c);
    }
 
    void text(String s) {
@@ -1156,18 +1151,14 @@ public class StenoView extends View implements RecognitionListener {
          s = s.substring(0,1).toUpperCase() + s.substring(1);
          Upc = false;
       }
-      synchronized (Ime) {
-         Ime.getCurrentInputConnection().commitText(s,1);
-      }
+      Ime.getCurrentInputConnection().commitText(s,1);
       Wipe = s.codePointCount(0, s.length());
    }
 
    void wipe() {
-      synchronized (Ime) {
-         while (Wipe > 0) {
-            Ime.sendDownUpKeyEvents(KeyEvent.KEYCODE_DEL);
-            --Wipe;
-         }
+      while (Wipe > 0) {
+         Ime.sendDownUpKeyEvents(KeyEvent.KEYCODE_DEL);
+         --Wipe;
       }
    }
 
