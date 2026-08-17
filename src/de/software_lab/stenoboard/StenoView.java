@@ -1,9 +1,10 @@
-// 06aug26 Software Lab. Alexander Burger
+// 15aug26 Software Lab. Alexander Burger
 
 package de.software_lab.stenoboard;
 
 import java.io.*;
 import java.nio.charset.*;
+import java.util.Vector;
 import java.util.ArrayList;
 import java.util.ArrayDeque;
 
@@ -82,7 +83,7 @@ public class StenoView extends View implements RecognitionListener {
    final static int StenoDigit[] = new int[] {
       0x100001, 0x100002, 0x100003, 0x100004, 0x100005, 0x100006, 0x100007, 0x100008,
       '7', '-', '3', 0, 0x10000A, 0x10000B, '9', '4',
-      '1', '/', '2', '5', '+', '6', '8', 0,
+      '1', '/', '2', '5', '+', '6', '8', 0x10000C,
       '.', 0x10000D, 0x10000E, 0x10000F, 0x100010, '0', '*', 0x100011
    };
    final static int StenoPunct[] = new int[] {
@@ -115,7 +116,7 @@ public class StenoView extends View implements RecognitionListener {
       {"N-B", "d", "D", "\"", "DOC", "Δ", "DEL"},
       {"W", "e", "E", "=", "NUM", "€", "LEFT"},
       {"W-B", "f", "F", null, "8", null, "F8"},
-      {"NW-R", "g", "G", "`", null, "º", null},
+      {"NW-R", "g", "G", "`", "GET", "º", null},
       {"E-L", "h", "H", "#", "-", "—", null},
       {"N", "i", "I", null, "PASTE", null, "UP"},
       {"S-R", "j", "J", null, "9", null, "F7"},
@@ -573,29 +574,53 @@ public class StenoView extends View implements RecognitionListener {
             Candidates[0] = null;
             break;
          case 0x100007:  // PASTE
-            String s = clipboard();
+            String[] lst = clipboard().split("\n");
 
-            if (s.length() != 0)
-               putDict(Candidates[0].length() == 0? s : Candidates[0] + '\t' + s);
-            Candidates[0] = null;
+            if (lst.length != 0) {
+               needDict();
+               if (Candidates[0].length() == 0) {
+                  Vector<String> dict = new Vector<String>();
+                  int d = 0;
+
+                  for (i = 0;;) {
+                     if (d == Dict.length) {
+                        while (i < lst.length)
+                           if (lst[i].length() != 0)
+                              dict.addElement(lst[i++]);
+                        break;
+                     }
+                     if (Dict[d].compareTo(lst[i]) < 0)
+                        dict.addElement(Dict[d++]);
+                     else {
+                        if (lst[i].length() != 0  &&  !Dict[d].equals(lst[i]))
+                           dict.addElement(lst[i]);
+                        if (++i == lst.length) {
+                           while (d < Dict.length)
+                              dict.addElement(Dict[d++]);
+                           break;
+                        }
+                     }
+                  }
+                  saveDict(dict.toArray(new String[dict.size()]));
+                  Candidates[0] = null;
+               }
+               else if (lst.length == 1) {
+                  putDict(Candidates[0] + '\t' + lst[0]);
+                  Candidates[0] = null;
+               }
+            }
             break;
          case -KeyEvent.KEYCODE_FORWARD_DEL:
             String s0, s1;
 
             if ((s0 = Candidates[0]).length() != 0  &&  (s1 = Candidates[CandPos]).length() != 0) {
-               try {
-                  PrintWriter out = new PrintWriter(DictFile);
-                  String dict[];
+               String dict[] = new String[Dict.length - 1];
 
-                  dict = new String[Dict.length - 1];
-                  for (i = 0;  i < Dict.length  &&  !(Dict[i].startsWith(s0)  &&  s1.equals(dictVal(i)));  ++i)
-                     out.println(dict[i] = Dict[i]);
-                  while (++i < Dict.length)
-                     out.println(dict[i - 1] = Dict[i]);
-                  out.close();
-                  Dict = dict;
-               }
-               catch (IOException e) {}
+               for (i = 0;  i < Dict.length  &&  !(Dict[i].startsWith(s0)  &&  s1.equals(dictVal(i)));  ++i)
+                  dict[i] = Dict[i];
+               while (++i < Dict.length)
+                  dict[i - 1] = Dict[i];
+               saveDict(dict);
             }
             Candidates[0] = null;
             break;
@@ -688,13 +713,18 @@ public class StenoView extends View implements RecognitionListener {
          else if (c == -KeyEvent.KEYCODE_TAB) {
             wipe();
             dly();
-            if (Auto < 0  ||  AutoComplete.equals(Dict[Auto])) {
+            if (Auto < 0) {
                putDictAuto();
                key(KeyEvent.KEYCODE_TAB);
                dly();
                reset("", true);
             }
-            else if (Auto >= 0) {
+            else if (AutoComplete.equals(Dict[Auto])) {
+               key(KeyEvent.KEYCODE_TAB);
+               dly();
+               reset("", true);
+            }
+            else {
                for (;;) {
                   if (Auto == Dict.length  ||  !Dict[++Auto].startsWith(AutoComplete)) {
                      setAuto();
@@ -709,13 +739,18 @@ public class StenoView extends View implements RecognitionListener {
          else if (c == -KeyEvent.KEYCODE_ENTER) {
             wipe();
             dly();
-            if (Auto < 0  ||  AutoComplete.equals(Dict[Auto])) {
+            if (Auto < 0) {
                putDictAuto();
                key(KeyEvent.KEYCODE_ENTER);
                dly();
                reset("", true);
             }
-            else if (Auto >= 0) {
+            else if (AutoComplete.equals(Dict[Auto])) {
+               key(KeyEvent.KEYCODE_ENTER);
+               dly();
+               reset("", true);
+            }
+            else {
                text(Dict[Auto].substring(AutoComplete.length()));
                AutoComplete = Dict[Auto];
             }
@@ -725,7 +760,6 @@ public class StenoView extends View implements RecognitionListener {
             wipe();
             dly();
             putDictAuto();
-            reset("", true);
             dictText();
          }
       }
@@ -738,7 +772,8 @@ public class StenoView extends View implements RecognitionListener {
             wipe();
             dly();
             if (" !\"'()*,-.:;?".indexOf(c) >= 0) {
-               putDictAuto();
+               if (Auto < 0)
+                  putDictAuto();
                reset("", true);
                text(s);
             }
@@ -758,10 +793,13 @@ public class StenoView extends View implements RecognitionListener {
          }
          else {
             wipe();
+            putDictAuto();
             reset(null, true);
          }
       }
       else {
+         ClipboardManager cm;
+
          if (AutoComplete != null) {
             wipe();
             dly();
@@ -779,6 +817,36 @@ public class StenoView extends View implements RecognitionListener {
          case 0x10000B:  // WIPE
             wipe();
             break;
+         case 0x10000C:  // GET
+            if ((cm = (ClipboardManager)Ime.getSystemService(Context.CLIPBOARD_SERVICE)) != null) {
+               try {
+                  StringBuilder sb = new StringBuilder();
+                  BufferedReader rd  = new BufferedReader(rawDictReader());
+                  String s = rd.readLine();
+
+                  needDict();
+                  for (i = 0;  i < Dict.length;) {
+                     if (s == null) {
+                        do
+                           sb.append(Dict[i] + '\n');
+                        while (++i < Dict.length);
+                        break;
+                     }
+                     if ((j = Dict[i].compareTo(s)) < 0) {
+                        sb.append(Dict[i] + '\n');
+                        ++i;
+                     }
+                     else {
+                        s = rd.readLine();
+                        if (j == 0)
+                           ++i;
+                     }
+                  }
+                  cm.setPrimaryClip(ClipData.newPlainText("Steno GET", sb.toString()));
+               }
+               catch (IOException e) {}
+            }
+            break;
          case 0x10000D:  // MIC
             if (SpeechRecognizer.isRecognitionAvailable(Ime)) {
                (Mic = SpeechRecognizer.createSpeechRecognizer(Ime)).setRecognitionListener(this);
@@ -789,8 +857,7 @@ public class StenoView extends View implements RecognitionListener {
             }
             break;
          case 0x10000E:  // PUSH
-            ClipboardManager cm = (ClipboardManager)Ime.getSystemService(Context.CLIPBOARD_SERVICE);
-            if (cm != null  &&  cm.hasPrimaryClip())
+            if ((cm = (ClipboardManager)Ime.getSystemService(Context.CLIPBOARD_SERVICE)) != null  &&  cm.hasPrimaryClip())
                Paste.push(cm.getPrimaryClip().getItemAt(0).coerceToText(getContext()).toString());
             break;
          case 0x10000F:  // QUIET
@@ -852,10 +919,9 @@ public class StenoView extends View implements RecognitionListener {
    }
 
    String clipboard() {
-      ClipboardManager cm = (ClipboardManager)Ime.getSystemService(Context.CLIPBOARD_SERVICE);
-
       if (!Paste.isEmpty())
          return Paste.removeLast();
+      ClipboardManager cm = (ClipboardManager)Ime.getSystemService(Context.CLIPBOARD_SERVICE);
       if (cm == null  ||  !cm.hasPrimaryClip())
          return "";
       return cm.getPrimaryClip().getItemAt(0).coerceToText(getContext()).toString();
@@ -879,12 +945,12 @@ public class StenoView extends View implements RecognitionListener {
          Help.setTextSize(n * 3/4);
          Help.setColor(Color.BLUE);
          Help.setTypeface(Typeface.SERIF);
-         for (int col = 0; col < StenoHelp1.length; ++col)
+         for (int col = 0;  col < StenoHelp1.length;  ++col)
             canvas.drawText(StenoHelp1[col], Width/100 * pos[col], n, Help);
          Help.setTypeface(Typeface.MONOSPACE);
          Help.setColor(Color.BLACK);
-         for (int row = 0; row < StenoHelp.length; ++row)
-            for (int col = 0; col < StenoHelp[row].length; ++col)
+         for (int row = 0;  row < StenoHelp.length;  ++row)
+            for (int col = 0;  col < StenoHelp[row].length;  ++col)
                if (StenoHelp[row][col] != null)
                   canvas.drawText(StenoHelp[row][col], Width/100 * pos[col], n + (row+1) * n, Help);
       }
@@ -990,6 +1056,8 @@ public class StenoView extends View implements RecognitionListener {
             s = R.version;
          else if (Vis == 0x10000B)
             s = "WIPE";
+         else if (Vis == 0x10000C)
+            s = "GET";
          else if (Vis == 0x10000E)
             s = "PUSH";
          else if (Vis == 0x10000F)
@@ -1046,40 +1114,32 @@ public class StenoView extends View implements RecognitionListener {
    void putDict(String s) {
       int a = 0;
       int z = Dict.length - 1;
-      int i;
+      int i, j;
 
       while (a <= z) {
          i = (a + z) / 2;
-         if (Dict[i].equals(s))
+         if ((j = Dict[i].compareTo(s)) == 0)
             return;
-         if (Dict[i].compareTo(s) > 0)
+         if (j > 0)
             z = i - 1;
          else
             a = i + 1;
       }
-      try {
-         PrintWriter out = new PrintWriter(DictFile);
-         String dict[];
+      String dict[] = new String[Dict.length + 1];
+      for (i = 0;  i < Dict.length  &&  Dict[i].compareTo(s) < 0;  ++i)
+         dict[i] = Dict[i];
+      dict[i] = s;
+      for (;  i < Dict.length;  ++i)
+         dict[i + 1] = Dict[i];
+      saveDict(dict);
+   }
 
-         dict = new String[Dict.length + 1];
-         for (i = 0;  i < Dict.length  &&  Dict[i].compareTo(s) < 0;  ++i)
-            out.println(dict[i] = Dict[i]);
-         out.println(dict[i] = s);
-         for (; i < Dict.length; ++i)
-            out.println(dict[i + 1] = Dict[i]);
-         out.close();
-         Dict = dict;
-      }
-      catch (IOException e) {}
+   InputStreamReader rawDictReader() throws FileNotFoundException {
+      return new InputStreamReader(getResources().openRawResource(R.raw.dict), StandardCharsets.UTF_8);
    }
 
    InputStreamReader dictReader() throws FileNotFoundException {
-      return
-         DictFile.exists()?
-            new FileReader(DictFile) :
-            new InputStreamReader(
-               getResources().openRawResource(R.raw.dict),
-               StandardCharsets.UTF_8 );
+      return DictFile.exists()? new FileReader(DictFile) : rawDictReader();
    }
 
    void needDict() {
@@ -1100,6 +1160,18 @@ public class StenoView extends View implements RecognitionListener {
          }
          catch (IOException e) {Dict = null;}
       }
+   }
+
+   void saveDict(String[] dict) {
+      Dict = dict;
+      try {
+         PrintWriter out = new PrintWriter(DictFile);
+
+         for (int i = 0;  i < dict.length;  ++i)
+            out.println(dict[i]);
+         out.close();
+      }
+      catch (IOException e) {}
    }
 
    void setAuto() {

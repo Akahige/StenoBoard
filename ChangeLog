@@ -1,3 +1,12 @@
+26.8.15
+   Add Digit-G (GET dictionary into system clipboard)
+      src/de/software_lab/stenoboard/StenoView.java
+      README
+
+26.8.11
+   Minor tunings
+      src/de/software_lab/stenoboard/StenoView.java
+
 26.8.6
    Propagate TAB or RET in AutoComplete at end of line
       src/de/software_lab/stenoboard/StenoView.java

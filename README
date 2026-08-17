@@ -1,5 +1,5 @@
 # VIP (=: flat T)
-# 30jul26 Software Lab. Alexander Burger
+# 15aug26 Software Lab. Alexander Burger
 
       StenoBoard
       ==========
@@ -245,11 +245,11 @@ directly use the text entered so far, or type Ctrl-space again to close
 the candidate input.
 
 Typing PASTE (see below) in candidate input adds the current paste
-buffer contents to the candidates database, either directly, or with the
-characters typed so far as the key.
+buffer contents to the candidates dictionary, either directly, or with
+the characters typed so far as the key.
 
 Typing DEL in candidate input deletes the combination of the key typed
-so far and the first match from the candidates database.
+so far and the first match from the candidates dictionary.
 
 The five remaining five keys generate sequences useful only in the TMUX
 terminal multiplexer:
@@ -299,6 +299,9 @@ the Digit field:
 
 -- "W" (WIPE) erases the text generated with the last input. Useful to
    undo an unintentional paste, or a failed voice recognition.
+
+-- "G" (GET) copies all user-added dictionary entries to the system
+   clipboard.
 
 -- "V" (VERS) displays the current version.
 
