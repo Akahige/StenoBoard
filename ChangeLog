@@ -1,3 +1,7 @@
+26.8.17
+   Bug in AutoComplete RET after TAB
+      src/de/software_lab/stenoboard/StenoView.java
+
 26.8.15
    Add Digit-G (GET dictionary into system clipboard)
       src/de/software_lab/stenoboard/StenoView.java
