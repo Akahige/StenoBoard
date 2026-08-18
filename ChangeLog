@@ -1,3 +1,7 @@
+26.8.18
+   reset() in AutoComplete ESC
+      src/de/software_lab/stenoboard/StenoView.java
+
 26.8.17
    Bug in AutoComplete RET after TAB
       src/de/software_lab/stenoboard/StenoView.java

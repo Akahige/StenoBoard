@@ -1,4 +1,4 @@
-// 17aug26 Software Lab. Alexander Burger
+// 18aug26 Software Lab. Alexander Burger
 
 package de.software_lab.stenoboard;
 
@@ -761,6 +761,7 @@ public class StenoView extends View implements RecognitionListener {
             wipe();
             dly();
             putDictAuto();
+            reset("", true);
             dictText();
          }
       }
