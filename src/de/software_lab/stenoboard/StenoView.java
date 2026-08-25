@@ -1,4 +1,4 @@
-// 18aug26 Software Lab. Alexander Burger
+// 25aug26 Software Lab. Alexander Burger
 
 package de.software_lab.stenoboard;
 
@@ -46,7 +46,7 @@ public class StenoView extends View implements RecognitionListener {
    File DictFile;
    String AutoComplete;
    ArrayDeque<String> Paste = new ArrayDeque<String>();
-   final static int CANDIDATES = 40;
+   final static int CANDIDATES = 60;
    final String Candidates[] = new String[CANDIDATES];
    float CandX[] = new float[CANDIDATES];
    float CandY;
@@ -773,7 +773,7 @@ public class StenoView extends View implements RecognitionListener {
          else {
             wipe();
             dly();
-            if (" !\"'()*,-.:;?".indexOf(c) >= 0) {
+            if (c <= '\"'  ||  "'()*,-.:;?".indexOf(c) >= 0) {
                putDictAuto();
                reset("", true);
                text(s);
