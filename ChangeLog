@@ -1,3 +1,7 @@
+26.8.27
+   Revert reset() in ESC from 26.8.18
+      src/de/software_lab/stenoboard/StenoView.java
+
 26.8.25
    Add control keys to delimiters
       src/de/software_lab/stenoboard/StenoView.java
