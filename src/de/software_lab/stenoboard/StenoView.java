@@ -760,7 +760,13 @@ public class StenoView extends View implements RecognitionListener {
          else if (c == -KeyEvent.KEYCODE_ESCAPE) {
             wipe();
             dly();
-            putDictAuto();
+            if (Auto < 0)
+               putDictAuto();
+            else if (!AutoComplete.equals(Dict[Auto])) {
+               AutoComplete = Dict[Auto];
+               Auto1 = Auto;
+            }
+            dictText();
          }
       }
       else if (c > 0  &&  c < 0x100000) {
