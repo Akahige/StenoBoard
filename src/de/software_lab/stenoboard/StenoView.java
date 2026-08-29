@@ -577,7 +577,6 @@ public class StenoView extends View implements RecognitionListener {
             String[] lst = clipboard().split("\n");
 
             if (lst.length != 0) {
-               needDict();
                if (Candidates[0].length() == 0) {
                   Vector<String> dict = new Vector<String>();
                   int d = 0;
@@ -760,12 +759,8 @@ public class StenoView extends View implements RecognitionListener {
          else if (c == -KeyEvent.KEYCODE_ESCAPE) {
             wipe();
             dly();
-            if (Auto < 0)
-               putDictAuto();
-            else if (!AutoComplete.equals(Dict[Auto])) {
-               AutoComplete = Dict[Auto];
-               Auto1 = Auto;
-            }
+            putDictAuto();
+            reset("", true);
             dictText();
          }
       }
@@ -785,7 +780,6 @@ public class StenoView extends View implements RecognitionListener {
             else {
                AutoComplete = AutoComplete + s;
                text(s);
-               needDict();
                setAuto();
             }
             dictText();
@@ -793,6 +787,7 @@ public class StenoView extends View implements RecognitionListener {
       }
       else if (c == 0x100001) {  // AUTO
          if (AutoComplete == null) {
+            needDict();
             reset("", true);
             dictText();
          }

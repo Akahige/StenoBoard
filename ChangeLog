@@ -1,5 +1,6 @@
 26.8.29
-   Revisit AutoComplete ESC
+   Refactor needDict()
+   Restore AutoComplete ESC
       src/de/software_lab/stenoboard/StenoView.java
 
 26.8.27
