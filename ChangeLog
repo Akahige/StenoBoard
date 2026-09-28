@@ -1,3 +1,7 @@
+26.9.28
+   Make QUIET mode ('Clk' global) persistent
+      src/de/software_lab/stenoboard/StenoView.java
+
 26.8.29
    Refactor needDict()
    Restore AutoComplete ESC

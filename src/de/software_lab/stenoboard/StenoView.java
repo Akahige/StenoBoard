@@ -1,4 +1,4 @@
-// 29aug26 Software Lab. Alexander Burger
+// 28sep26 Software Lab. Alexander Burger
 
 package de.software_lab.stenoboard;
 
@@ -16,6 +16,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.Context;
 import android.content.ContentResolver;
+import android.content.SharedPreferences;
 import android.content.ClipboardManager;
 import android.content.ClipDescription;
 import android.content.ClipData;
@@ -31,6 +32,7 @@ import android.os.Bundle;
 public class StenoView extends View implements RecognitionListener {
    StenoIME Ime;
    SpeechRecognizer Mic;
+   SharedPreferences Prefs;
    float Max, Width, Height, Size, OrgX, OrgY, PadX, PadY;
    int Pos, Dir, Rpt, RptN;
    boolean Off, Beg, Shift, Punct, Digit, Cntrl, AltGr, Funct, Upc, Clk;
@@ -145,6 +147,7 @@ public class StenoView extends View implements RecognitionListener {
 
    public StenoView(Context context, AttributeSet attrs) {
       super(context, attrs);
+      Prefs = context.getSharedPreferences("Prefs", Context.MODE_PRIVATE);
       Text1.setColor(Color.BLACK);
       Text1.setStyle(Paint.Style.STROKE);
       Text1.setTextAlign(Paint.Align.CENTER);
@@ -166,7 +169,8 @@ public class StenoView extends View implements RecognitionListener {
             .setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION)
             .build() )
          .build();
-      ClkId = Click.load(getContext(), R.raw.click, 1);
+      Clk = Prefs.getBoolean("Clk", false);
+      ClkId = Click.load(context, R.raw.click, 1);
    }
 
    @Override public boolean onTouchEvent(MotionEvent ev) {
@@ -865,6 +869,7 @@ public class StenoView extends View implements RecognitionListener {
                Click.play(ClkId, 0.5f, 0.5f, 1, 0, 1f);
             else
                dly();
+            Prefs.edit().putBoolean("Clk", Clk).apply();
             break;
          case 0x100010:  // DOC
             if (Help == null) {
