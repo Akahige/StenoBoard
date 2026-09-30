@@ -1,4 +1,4 @@
-// 28sep26 Software Lab. Alexander Burger
+// 30sep26 Software Lab. Alexander Burger
 
 package de.software_lab.stenoboard;
 
@@ -13,6 +13,7 @@ import android.view.*;
 import android.graphics.*;
 import android.content.res.*;
 import android.app.Activity;
+import android.app.KeyguardManager;
 import android.content.Intent;
 import android.content.Context;
 import android.content.ContentResolver;
@@ -790,15 +791,17 @@ public class StenoView extends View implements RecognitionListener {
          }
       }
       else if (c == 0x100001) {  // AUTO
-         if (AutoComplete == null) {
-            needDict();
-            reset("", true);
-            dictText();
-         }
-         else {
-            wipe();
-            putDictAuto();
-            reset(null, true);
+         if (!((KeyguardManager)Ime.getSystemService(Context.KEYGUARD_SERVICE)).isDeviceLocked()) {
+            if (AutoComplete == null) {
+               needDict();
+               reset("", true);
+               dictText();
+            }
+            else {
+               wipe();
+               putDictAuto();
+               reset(null, true);
+            }
          }
       }
       else {
@@ -811,9 +814,11 @@ public class StenoView extends View implements RecognitionListener {
          }
          switch (c) {
          case 0x100000:  // CNTRL-SPACE
-            needDict();
-            Candidates[0] = "";
-            CandPos = 1;
+            if (!((KeyguardManager)Ime.getSystemService(Context.KEYGUARD_SERVICE)).isDeviceLocked()) {
+               needDict();
+               Candidates[0] = "";
+               CandPos = 1;
+            }
             break;
          case 0x100007:  // PASTE
             text(clipboard());
