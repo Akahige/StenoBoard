@@ -791,17 +791,17 @@ public class StenoView extends View implements RecognitionListener {
          }
       }
       else if (c == 0x100001) {  // AUTO
-         if (!((KeyguardManager)Ime.getSystemService(Context.KEYGUARD_SERVICE)).isDeviceLocked()) {
-            if (AutoComplete == null) {
+         if (AutoComplete == null) {
+            if (!((KeyguardManager)Ime.getSystemService(Context.KEYGUARD_SERVICE)).isDeviceLocked()) {
                needDict();
                reset("", true);
                dictText();
             }
-            else {
-               wipe();
-               putDictAuto();
-               reset(null, true);
-            }
+         }
+         else {
+            wipe();
+            putDictAuto();
+            reset(null, true);
          }
       }
       else {
